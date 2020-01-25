@@ -22,7 +22,7 @@ function draw() {
 
 
 
-  text(mouseX + "    " +  mouseY, 10, 10, 70, 80);
+  text(mouseX + "    " +  mouseY, mouseX + 10, mouseY + 10, 70, 80);
 
   noStroke();
   fill(255);
@@ -50,6 +50,7 @@ function draw() {
 
 
   noStroke();
+
   fill(255);
   arc(125, 150, 50, 50, PI, TWO_PI);
 
