@@ -2,7 +2,7 @@ var img; // Declare variable 'img'.
 
 function setup() {
   createCanvas(261, 302);
-  img = loadImage('assets/template.jpg'); // Load the image
+  img = loadImage('anime.jpg'); // Load the image
 }
 
 function draw() {
