@@ -1,21 +1,17 @@
 var img; // Declare variable 'img'.
-var xValue = 0;
-var yvalue = 0;
-
-
+var xValues = 0;
+var yValues = 0;
 function setup() {
   createCanvas(261, 302);
   img = loadImage('https://chrislbaird.github.io/ATK302/anime.png'); // Load the image
+
 }
 
+var value = 0;
 function draw() {
-  fill(value);
-  rect(25, 25, 50, 50);
+  image(img, 0, 0);
+  text(mouseX + "    " +  mouseY, 10, 10, 70, 80);
 }
 function mousePressed() {
-  if (value === 0) {
-    value = 255;
-  } else {
-    value = 0;
-  }
+  
 }
