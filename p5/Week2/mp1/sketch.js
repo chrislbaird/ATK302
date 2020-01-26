@@ -2,7 +2,7 @@ var img; // Declare variable 'img'.
 
 function setup() {
   createCanvas(261, 302);
-  img = loadImage('anime.jpg'); // Load the image
+  img = loadImage('https://chrislbaird.github.io/ATK302/anime.png'); // Load the image
 }
 
 function draw() {
