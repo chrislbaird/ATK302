@@ -1,16 +1,13 @@
+var img; // Declare variable 'img'.
+
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(261, 302);
+  img = loadImage('assets/template.jpg'); // Load the image
 }
 
 function draw() {
-  background(237, 34, 93);
-  fill(0);
-
-  if (mouseIsPressed) {
-    ellipse(50, 50, 50, 50);
-  } else {
-    rect(25, 25, 50, 50)
-  }
-
-  print(mouseIsPressed);
+  // Displays the image at its actual size at point (0,0)
+  image(img, 0, 0);
+  // Displays the image at point (0, height/2) at half size
+  image(img, 0, height / 2, img.width / 2, img.height / 2);
 }
