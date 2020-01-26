@@ -8,6 +8,6 @@ function setup() {
 function draw() {
   // Displays the image at its actual size at point (0,0)
   image(img, 0, 0);
-  // Displays the image at point (0, height/2) at half size
-  
+  text(mouseX + "    " +  mouseY, 10, 10, 70, 80);
+
 }
