@@ -33,55 +33,53 @@ function draw() {
 
   noStroke();
   fill(255);
-  arc(300, 100, 50, 50, PI, TWO_PI);
+  arc(300 + counter , 100 , 50, 50, PI, TWO_PI);
 
 
   noStroke();
   fill(255);
-  arc(325, 100, 50, 50, PI, TWO_PI);
+  arc(325 + counter, 100 , 50, 50, PI, TWO_PI);
 
 
   noStroke();
   fill(255);
-  arc(350, 100, 50, 50, PI, TWO_PI);
+  arc(350 + counter, 100 , 50, 50, PI, TWO_PI);
 
-  noStroke();
-  fill(255);
-  arc(375, 100, 50, 50, PI, TWO_PI);
+
 
 // Cloud two
 
   noStroke();
   fill(255);
-  arc(100, 150, 50, 25, PI, TWO_PI);
+  arc(100 + counter, 150, 50, 25, PI, TWO_PI);
 
 
   noStroke();
 
   fill(255);
-  arc(125, 150, 50, 50, PI, TWO_PI);
+  arc(125 + counter, 150, 50, 50, PI, TWO_PI);
 
 
   noStroke();
   fill(255);
-  arc(150, 150, 50, 75, PI, TWO_PI);
+  arc(150 + counter, 150, 50, 75, PI, TWO_PI);
 
 
   // Cloud three
 
   noStroke();
   fill(255);
-  arc(300, 200, 50, 25, PI, TWO_PI);
+  arc(300 + counter , 200, 50, 25, PI, TWO_PI);
 
 
   noStroke();
   fill(255);
-  arc(315, 200, 50, 50, PI, TWO_PI);
+  arc(315 + counter, 200, 50, 50, PI, TWO_PI);
 
 
   noStroke();
   fill(255);
-  arc(330, 200, 50, 31, PI, TWO_PI);
+  arc(330 + counter, 200, 50, 31, PI, TWO_PI);
 
 
   // Tree 1
