@@ -2,7 +2,7 @@ var img; // Declare variable 'img'.
 
 function setup() {
   createCanvas(500, 500);
-  
+
 }
 
 function draw() {
@@ -24,7 +24,7 @@ function draw() {
   quad(100, 350, 150, 350, 200, 500, 50, 500);
 
 
-  
+
   text(mouseX + "    " +  mouseY, 10, 10, 70, 80);
 
 
@@ -209,41 +209,66 @@ function draw() {
 
 
   // test charachter
-   
+
 	push();
-	translate(0, 300);
-	scale(0.5);
-	fill(197, 140, 133);
-	rect(237,254,47,69);
-	ellipse(261,210,80,87);
-	
-	fill(231,62,141);
-	stroke(231,62,141);
-	
-	fill(255, 0, 0);
-	bezier(255,169,180,159,260,239,185,229);
-	bezier(254,166,179,156,259,236,184,226);
-	
-	
-	fill(17, 214, 240);
-	ellipse(249,208,28,31);
-	ellipse(283,209,29,30);
-	
-	
-	
-	
-	fill(235, 52, 222);
-	
-	rect(238,323,17,60);
-	rect(270,322,14,60);
-	
-	
-	
-	
-	triangle(257,258,237,299,285,300);
+scale(0.5);
+translate(30, 300);
+stroke(197, 140, 133);
+strokeWeight(2);
+fill(197, 140, 133);
+
+//Body start
+
+ellipse(186,207,80,80);
+rect(167,248,40,90);
+
+bezier(214,248,269,371,204,288,200,249);
+bezier(165,253,104,290,117,360,167,268);
+
+//clothes
+stroke(0);
+strokeWeight(1);
+
+fill(255,105,180);
+triangle(189,247,165,305,207,305);
+rect(169,359,16,60);
+rect(167,334,40,25);
+rect(190,357,14,60);
+
+// other testing
 
 
-    pop();
+
+
+
+fill(0);
+
+
+
+
+fill(255);
+ellipse(174,192,22,29);
+ellipse(201,192,22,29);
+
+
+fill(0,12,255);
+ellipse(202,195,11,19);
+ellipse(173,195,11,19);
+
+
+
+// hair
+
+fill(255,0,0);
+bezier(167,174,92,164,172,244,97,234);
+bezier(162,172,87,162,167,242,92,232);
+bezier(165,171,90,161,170,241,95,231);
+
+
+
+
+
+  pop();
 
 
 
