@@ -1,5 +1,5 @@
 var img; // Declare variable 'img'.
-
+var counter = 0;
 function setup() {
   createCanvas(500, 500);
 
@@ -25,7 +25,7 @@ function draw() {
 
 
 
-  text(mouseX + "    " +  mouseY, 10, 10, 70, 80);
+
 
 
 
@@ -265,59 +265,14 @@ bezier(162,172,87,162,167,242,92,232);
 bezier(165,171,90,161,170,241,95,231);
 
 
+textSize(18);
+fill(0);
+if (mouseIsPressed) {
+   text('Victoria is a new student at Illinois State University.  She recently joined her philosophy club.  \n There one of the students mentioned there was no way to know if they truly exist. This caused \n Victoria to go on a long walkto think about what he said', 0,-250);
+  } else {
+    text('Hold Mouse for story', 0,-250);
 
-
-
-  pop();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-updatePixels();
-
+  }
 
 
 
