@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+PRODID:-//Symplicity Corporation//PHP ICS Generator//EN
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+DTSTART:20190310T020000
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20191103T020000
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20200308T020000
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f66a0bc4e1b87997f1504939f010eea4d47c27db@illinoisstate-csm.symplicity.com
+DTSTAMP:20200129T020509Z
+SUMMARY:InstaCareer
+DESCRIPTION:Location: Bone Student Center\, Brown Ballroom\nDescription: PLEASE ARRIVE PROMPTLY AT THE BEGINNING OF YOUR DESIGNATED START TIME. This is a staggered-start event\, that will take approximately 50 minutes.\n\nAttending an upcoming career fair or planning on connecting with an employer? Then participate in one of these sessions to learn the skills you need to be successful when you meet potential employers or professional contacts.\n\nRotate through a series of stations and hear first hand from actual recruiters on how to:\n\n- Make a good first impression and dress appropriately for the situation\n- Research employers before you meet with them\n- Pitch yourself through a thirty second commercial and solid handshake\n- Follow-up with employers and people you meet to stay connected\n\nWhat to expect\n- Rotation through all stations takes approximately an hour\, with possible wait time before the first session starts.\n- Attendees do not need to remain after rotating through all stations.\n- If attending as part of a class\, you must rotate through all sessions and check-out before leaving in order to receive attendance validation.\n- No admittance after 6:00 p.m.\n\nFor more information\, log into Hire-A-Redbird:\n\n	https://illinoisstate-csm.symplicity.com/students/
+DTSTART;TZID=America/Chicago:20200130T163000
+DTEND;TZID=America/Chicago:20200130T164000
+LOCATION:Bone Student Center\, Brown Ballroom
+END:VEVENT
+END:VCALENDAR
