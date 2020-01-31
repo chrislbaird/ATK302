@@ -12,7 +12,7 @@ function draw() {
 
 
  fill("#ffff00");
-  ellipse(450, 50, 72, 72);
+  ellipse(450, 50 + counter, 72, 72);
 
   fill(51, 204, 51);
   rect(0, 350, 500, 150);
@@ -211,12 +211,13 @@ function draw() {
   // test charachter
 
 	push();
+
 scale(0.5);
 translate(30, 300);
 stroke(197, 140, 133);
 strokeWeight(2);
 fill(197, 140, 133);
-
+translate(0, counter);
 //Body start
 
 ellipse(186,207,80,80);
@@ -267,11 +268,14 @@ bezier(165,171,90,161,170,241,95,231);
 
 textSize(18);
 fill(0);
+
+
 if (mouseIsPressed) {
-   text('Victoria is a new student at Illinois State University.  She recently joined her philosophy club.  \n There one of the students mentioned there was no way to know if they truly exist. This caused \n Victoria to go on a long walkto think about what he said', 0,-250);
+   text('Victoria is a new student at Illinois State University.  She recently joined her philosophy club.  \n There one of the students mentioned there was no way to know if they truly exist. This caused \n Victoria to go on a long walkto think about what he said', 0,-350);
+   counter = 100;
   } else {
     text('Hold Mouse for story', 0,-250);
-
+    counter = 0;
   }
 
 
