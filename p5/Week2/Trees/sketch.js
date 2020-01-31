@@ -24,184 +24,34 @@ function draw() {
 
   text(mouseX + "    " +  mouseY, mouseX + 10, mouseY + 10, 70, 80);
 
-  noStroke();
-  fill(255);
-  arc(300, 100, 50, 50, PI, TWO_PI);
-
-
-  noStroke();
-  fill(255);
-  arc(325, 100, 50, 50, PI, TWO_PI);
-
-
-  noStroke();
-  fill(255);
-  arc(350, 100, 50, 50, PI, TWO_PI);
-
-  noStroke();
-  fill(255);
-  arc(375, 100, 50, 50, PI, TWO_PI);
-
-// Cloud two
-
-  noStroke();
-  fill(255);
-  arc(100, 150, 50, 25, PI, TWO_PI);
-
-
-  noStroke();
-
-  fill(255);
-  arc(125, 150, 50, 50, PI, TWO_PI);
-
-
-  noStroke();
-  fill(255);
-  arc(150, 150, 50, 75, PI, TWO_PI);
-
-
-  // Cloud three
-
-  noStroke();
-  fill(255);
-  arc(300, 200, 50, 25, PI, TWO_PI);
-
-
-  noStroke();
-  fill(255);
-  arc(315, 200, 50, 50, PI, TWO_PI);
-
-
-  noStroke();
-  fill(255);
-  arc(330, 200, 50, 31, PI, TWO_PI);
-
-
-  // Tree 1
-  fill(102, 51, 0);
-  rect(350, 300, 35, 100, 20);
-
-  fill(0, 255, 0);
-  ellipse(340, 300, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(365, 300, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(390, 300, 50, 50);
-
-
-  fill(0, 255, 0);
-  ellipse(350, 275, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(325, 275, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(400, 275, 50, 50);
-
-
-  fill(0, 255, 0);
-  ellipse(365, 255, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(355, 255, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(375, 255, 50, 50);
-
-  // Tree 2
-  fill(102, 51, 0);
-  rect(200, 250, 25, 125, 20);
-
-  fill(0, 255, 0);
-  ellipse(200, 240, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(215, 240, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(225, 240, 50, 50);
-
-
-  fill(0, 255, 0);
-  ellipse(175, 225, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(200, 225, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(245, 225, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(200, 200, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(225, 200, 50, 50);
-
-  fill(0, 255, 0);
-  ellipse(235, 200, 50, 50);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // bush 1
-
-  fill(0, 255, 0);
-  arc(350, 400, 50, 25, PI, TWO_PI);
-
-
-
-  fill(0, 255, 0);
-  arc(375, 400, 50, 50, PI, TWO_PI);
-
-
-
-  fill(0, 255, 0);
-  arc(400, 400, 50, 31, PI, TWO_PI);
-
-
-  // bush 2
-
-  fill(0, 255, 0);
-  arc(200, 375, 50, 25, PI, TWO_PI);
-
-
-
-  fill(0, 255, 0);
-  arc(210, 376, 50, 50, PI, TWO_PI);
-
-
-
-  fill(0, 255, 0);
-  arc(220, 375, 50, 31, PI, TWO_PI);
-
-
-
-
-
-
-
-
-
-  // Tree 2
+ 
+
+
+
+
+  // charachter
+  
+    fill(255);
+	stroke(62,157,231);
+	strokeWeight(3);
+	bezier(195,265,120,255,200,335,125,325);
+	fill(62,157,231);
+	rect(237,254,47,69);
+	ellipse(261,210,80,87);
+	triangle(612,179,624,253,640,193);
+	fill(231,62,141);
+	stroke(231,62,141);
+	bezier(396,78,321,68,252,89,353,154);
+	bezier(255,169,180,159,260,239,185,229);
+	bezier(254,166,179,156,259,236,184,226);
+	ellipse(249,208,28,31);
+	bezier(470,205,395,195,475,275,400,265);
+	ellipse(283,209,29,30);
+	ellipse(598,89,28,12);
+	rect(238,323,17,60);
+	rect(270,322,14,60);
+	bezier(207,75,196,4,276,84,201,74);
+	triangle(257,258,237,299,280,300);
 
 
 
