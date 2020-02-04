@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw() {
- image(harrypotter, 0, 0, 200, 200);
- image(girlwithpearl, 0, 200, 200);
- image(turkey, 0, 400, 200, 200);
+ image(harrypotterimage, 0, 0, 200, 200);
+ image(girlwithpearl, 0, 200, 400, 400);
+ image(turkey, 0, 500, 400, 400);
 }
