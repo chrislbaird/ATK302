@@ -18,8 +18,8 @@ function setup() {
     girlwithpearl =  loadImage("assets/pearl.jpg");
     turkey = loadImage("assets/turkey.jpg");
     song1.play();  // this is what starts the sound
-    myFont = loadFont('assets/myCoolestFont.otf');
-
+    myFont = loadFont('../fonts/assets/HarryPotter-ov4z.ttf');
+    textFont(myFont, 32) ;
 }
 
 function draw() {
@@ -27,5 +27,6 @@ function draw() {
  image(girlwithpearl, 0, 400, 400, 400);
  image(turkey, 0, 800, 400, 400);
 
-  text("test", 500, 100);
+
+ text("Harry Potter Font", 500, 100);
 }
