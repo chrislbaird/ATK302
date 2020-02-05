@@ -26,5 +26,5 @@ function draw() {
  image(girlwithpearl, 0, 400, 400, 400);
  image(turkey, 0, 800, 400, 400);
 
-
+  text("test", 500, 100);
 }
