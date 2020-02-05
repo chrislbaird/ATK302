@@ -13,7 +13,7 @@ function preload() {
 
 function setup() {
     createCanvas(1080, 1920);
-
+    background(255);
     harrypotterimage = loadImage("assets/harrypotter.jpg");
     girlwithpearl =  loadImage("assets/pearl.jpg");
     turkey = loadImage("assets/turkey.jpg");
