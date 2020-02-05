@@ -2,6 +2,7 @@ var harrypotterimage;
 var girlwithpearl;
 var turkey;
 var song1;
+var myFont;
 
 
 function preload() {
@@ -17,7 +18,7 @@ function setup() {
     girlwithpearl =  loadImage("assets/pearl.jpg");
     turkey = loadImage("assets/turkey.jpg");
     song1.play();  // this is what starts the sound
-
+    myFont = loadFont('assets/myCoolestFont.otf');
 
 }
 
