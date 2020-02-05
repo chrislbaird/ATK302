@@ -29,4 +29,8 @@ function draw() {
 
 
  text("Harry Potter Font", 500, 100);
+
+ function touchStarted() {
+  getAudioContext().resume();
+}
 }
