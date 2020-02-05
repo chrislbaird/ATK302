@@ -7,6 +7,7 @@ var myFont;
 
 function preload() {
   song1 = loadSound('../sounds/assets/HarryPotterMusic.mp3');
+  myFont = loadFont('../fonts/assets/HarryPotter-ov4z.ttf');
 }
 
 
@@ -18,7 +19,7 @@ function setup() {
     girlwithpearl =  loadImage("assets/pearl.jpg");
     turkey = loadImage("assets/turkey.jpg");
     song1.play();  // this is what starts the sound
-    myFont = loadFont('../fonts/assets/HarryPotter-ov4z.ttf');
+
     textFont(myFont, 32) ;
 }
 
