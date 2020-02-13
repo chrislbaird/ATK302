@@ -1,29 +1,51 @@
 var height = 500;
 var width = 500;
+var caseIndex = 0;
 
-var x = 0;
-var y = 0;
 
 
 function setup() {
-  createCanvas(width, height);
+  createCanvas(500, 500);
 }
 
 function draw() {
 
- background(255, 0, 0);
- fill(9, 255,0);
- rect(x, y, 100, 100);
+
+ fill(0);
+ rect(100, 100, 100, 100);
+ background(255);
+
+ switch(caseIndex) {
+   case 0:
+     text('Case 1', 10, 30);
+     break;
+   case 1:
+    text('Case 2', 10, 30);
+     break;
+   case 2:
+    text('Case   3', 10, 30);
+    break;
+   case 3:
+    text('Case   4', 10, 30);
+    break;
 
 
-x++;
 
-if (x > width) {
-  x = 0;
+
+ }
+
+
+
+
+
+
+
 }
 
 
+function mousePressed() {
 
+ caseIndex = (caseIndex + 1) % 4;
 
 
 }
