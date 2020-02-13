@@ -1,8 +1,7 @@
 var height = 500;
 var width = 500;
 
-var x = 0;
-var y = 0;
+
 
 
 function setup() {
@@ -28,6 +27,10 @@ function draw() {
 
 
 function mousePressed() {
-background(random(256), random(256), random(256));
-x++;
+
+  if ((mouseX > 100 && mouseX < 200) && (mouseY > 100 && mouseY < 200)) {
+    background(random(256), random(256), random(256));
+  }
+
+
 }
