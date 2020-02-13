@@ -6,12 +6,14 @@ var y = 0;
 
 
 function setup() {
-  createCanvas(width, height);
+  
+  createCanvas(500, 500);
+  background(255, 0, 0);
 }
 
 function draw() {
 
- background(255, 0, 0);
+
  fill(9, 255,0);
  rect(x, y, 100, 100);
 

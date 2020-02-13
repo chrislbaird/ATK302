@@ -6,24 +6,28 @@ var y = 0;
 
 
 function setup() {
-  createCanvas(width, height);
+  createCanvas(500, 500);
 }
 
 function draw() {
 
- background(255, 0, 0);
+
  fill(9, 255,0);
- rect(x, y, 100, 100);
+ rect(100, 100, 100, 100);
 
 
-x++;
 
-if (x > width) {
-  x = 0;
+
+
+
+
+
+
+
 }
 
 
-
-
-
+function mousePressed() {
+background(random(256), random(256), random(256));
+x++;
 }
