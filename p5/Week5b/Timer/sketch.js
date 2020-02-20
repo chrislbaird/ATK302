@@ -1,3 +1,5 @@
+new p5();
+
 var timer = 200;
 var randomValue1 = random(256);
 var randomValue2 = random(256);
