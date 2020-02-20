@@ -11,16 +11,12 @@ function setup() {
 
 function draw() {
   background('white');
-  fill(0);
+  fill(vol * 100);
   rect(100, 100, 10, 100);
   vol = mic.getLevel(); // level is between 0 and 1
   vol = vol * 100; // you may need to change this
 
-  if (vol > 3) {
-    // do something
-    y++ ;
 
-  }
 
 
   textSize(18);
