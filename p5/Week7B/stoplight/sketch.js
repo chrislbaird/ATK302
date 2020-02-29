@@ -40,7 +40,7 @@ function draw() {
   switch(myState) {
 
     case lightsArray[0]:
-    text(lightsArray[0], 100, 100);
+
     redLight(true);
     yellowLight(false);
     greenLight(false);
@@ -50,7 +50,7 @@ function draw() {
     break;
 
     case lightsArray[1]:
-    text(lightsArray[2], 100, 100);
+
     redLight(false);
     yellowLight(false);
     greenLight(true);
@@ -61,7 +61,7 @@ function draw() {
 
     case lightsArray[2]:
 
-    text(lightsArray[1], 100, 100);
+
     redLight(false);
     yellowLight(true);
     greenLight(false);
