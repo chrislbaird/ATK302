@@ -29,22 +29,16 @@ function draw() {
 
 function storyText(inputText) {
 
-    inputTextModded = paragraphBuilder(inputText);
+
 
     push();
     translate(250,0);
     fill(125);
+    textSize(16);
     rect(0, 500, 1000, 250);
 
-    text(inputTextModded, 50, 550);
+    text(inputText, 50, 550, 800, 500);
 
     pop();
 
-}
-
-
-function paragraphBuilder(inputText) {
-
-
-    return inputText;
 }
