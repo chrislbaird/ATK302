@@ -29,14 +29,14 @@ function draw() {
 
 function storyText(inputText) {
 
-    inputTextModded = paragraphBuilder();
+    inputTextModded = paragraphBuilder(inputText);
 
     push();
     translate(250,0);
     fill(125);
     rect(0, 500, 1000, 250);
 
-    text(inputTextModded, 50, 600);
+    text(inputTextModded, 50, 550);
 
     pop();
 
