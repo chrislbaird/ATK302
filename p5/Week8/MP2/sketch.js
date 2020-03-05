@@ -1,28 +1,28 @@
+var hisStory = 0;
+var herStory = 0;
+
+
 function setup() {
   createCanvas(1250, 1250);
-  translate(250, 0);
+
   background(255);
   strokeWeight(4);
   stroke(0);
   fill(0);
-  rect(0,0, 500, 500);
+  rect(250,0, 500, 500);
   fill(255);
-  rect(500,0, 500, 500);
+  rect(750,0, 500, 500);
   fill(124);
-  rect(0, 500, 1000, 250);
+  rect(250, 500, 1000, 250);
 
 }
 
 function draw() {
 
 
-  him(100, 250);
+ console.log(hisStory);
 
-  her(750, 250);
-
-
-
-
+  storyText(mouseX + "   " + mouseY);
 
 }
 
@@ -33,12 +33,12 @@ function storyText(inputText) {
 
 
     push();
-    translate(250,0);
+
     fill(125);
     textSize(16);
-    rect(0, 500, 1000, 250);
+    rect(250, 500, 1000, 250);
 
-    text(inputText, 50, 550, 800, 500);
+    text(inputText, 300, 550, 800, 500);
 
     pop();
 
@@ -52,7 +52,9 @@ function storyText(inputText) {
 function him(x, y) {
 
     push();
-    translate(250,0);
+    fill(0);
+    rect(250,0, 500, 500);
+
     fill(255);
     circle(x, y, 100);
     pop();
@@ -64,10 +66,105 @@ function her(x, y) {
 
 
   push();
-  translate(250,0);
+
   fill(0);
   circle(x, y, 100);
   pop();
+
+
+}
+
+
+function mousePressed() {
+
+ if ((mouseX > 250 & mouseX < 750) & (mouseY > 0 & mouseY <500)) {
+   hisStoryFunction();
+} else if ((mouseX > 750 & mouseX < 1250) & (mouseY > 0 & mouseY <500)) {
+   herStoryFunction();
+ } else {
+  console.log("log");
+ }
+
+
+
+
+
+}
+
+
+
+
+
+
+function hisStoryFunction() {
+  hisStory = hisStory % 9;
+  switch (hisStory) {
+   case 0:
+   him(300,100);
+     break;
+   case 1:
+   him(400,100);
+     break;
+   case 2:
+   him(500,100);
+     break;
+   case 3:
+   him(600,100);
+     break;
+   case 4:
+   him(700,100);
+     break;
+   case 5:
+   him(700,200);
+     break;
+   case 6:
+   him(700,200);
+    break;
+   case 7:
+   him(700,300);
+    break;
+   case 8:
+   him(700,400);
+     break;
+   case 9:
+   him(700,500);
+       break;
+ }
+ hisStory++;
+
+
+
+}
+
+
+
+
+function herStoryFunction() {
+
+  switch (herStory) {
+  case 0:
+
+    break;
+  case 1:
+
+    break;
+  case 2:
+
+    break;
+  case 3:
+
+    break;
+  case 4:
+
+    break;
+  case 5:
+
+    break;
+
+
+}
+herStory++;
+
 
 
 }
