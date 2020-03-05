@@ -1,10 +1,10 @@
 var hisStory = 0;
 var herStory = 0;
-
+let millisecond = millis();
 
 function setup() {
   createCanvas(1250, 1250);
-  let millisecond = millis();
+
   background(255);
   strokeWeight(4);
   stroke(0);
