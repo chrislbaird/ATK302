@@ -16,8 +16,9 @@ function setup() {
 function draw() {
 
 
-    storyText("'Call me Ishmael. Some years ago--never mind how long precisely--having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.");
-    console.log(paragraphBuilder("test"));
+  him(100, 250);
+
+  her(750, 250);
 
 
 
@@ -40,5 +41,33 @@ function storyText(inputText) {
     text(inputText, 50, 550, 800, 500);
 
     pop();
+
+}
+
+
+
+
+
+
+function him(x, y) {
+
+    push();
+    translate(250,0);
+    fill(255);
+    circle(x, y, 100);
+    pop();
+
+}
+
+
+function her(x, y) {
+
+
+  push();
+  translate(250,0);
+  fill(0);
+  circle(x, y, 100);
+  pop();
+
 
 }
