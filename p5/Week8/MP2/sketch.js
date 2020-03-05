@@ -4,7 +4,7 @@ var herStory = 0;
 
 function setup() {
   createCanvas(1250, 1250);
-  var millisecond = millis();
+  let millisecond = millis();
   background(255);
   strokeWeight(4);
   stroke(0);
@@ -19,7 +19,7 @@ function setup() {
 
 function draw() {
 
-
+text(millisecond / 100, 100, 100);
  console.log(herStory);
 
   storyText(mouseX + "   " + mouseY);
