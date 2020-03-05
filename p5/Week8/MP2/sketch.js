@@ -20,7 +20,7 @@ function setup() {
 function draw() {
 
 
- console.log(hisStory);
+ console.log(herStory);
 
   storyText(mouseX + "   " + mouseY);
 
@@ -66,7 +66,8 @@ function her(x, y) {
 
 
   push();
-
+  fill(255);
+  rect(750,0, 500, 500);
   fill(0);
   circle(x, y, 100);
   pop();
@@ -118,17 +119,16 @@ function hisStoryFunction() {
    him(700,200);
      break;
    case 6:
-   him(700,200);
-    break;
-   case 7:
    him(700,300);
     break;
-   case 8:
+   case 7:
    him(700,400);
+    break;
+   case 8:
+   him(700,450);
      break;
-   case 9:
-   him(700,500);
-       break;
+
+
  }
  hisStory++;
 
@@ -141,29 +141,39 @@ function hisStoryFunction() {
 
 function herStoryFunction() {
 
+  herStory = herStory % 9;
   switch (herStory) {
-  case 0:
-
+   case 0:
+   her(1200,100);
+     break;
+   case 1:
+   her(1100,100);
+     break;
+   case 2:
+   her(1000,100);
+     break;
+   case 3:
+   her(900,100);
+     break;
+   case 4:
+   her(800,100);
+     break;
+   case 5:
+   her(800,200);
+     break;
+   case 6:
+   her(800,300);
     break;
-  case 1:
-
+   case 7:
+   her(800,400);
     break;
-  case 2:
-
-    break;
-  case 3:
-
-    break;
-  case 4:
-
-    break;
-  case 5:
-
-    break;
+   case 8:
+   her(800,450);
+     break;
 
 
-}
-herStory++;
+ }
+ herStory++;
 
 
 
