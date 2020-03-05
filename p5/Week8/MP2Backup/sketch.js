@@ -1,5 +1,4 @@
-var hisStory = 0;
-var herStory = 0;
+var combinedStory = 0;
 
 
 function setup() {
@@ -101,39 +100,30 @@ function hisStoryFunction() {
   hisStory = hisStory % 9;
   switch (hisStory) {
    case 0:
-   storyText();
    him(300,100);
      break;
    case 1:
-   storyText();
    him(400,100);
      break;
    case 2:
-   storyText();
    him(500,100);
      break;
    case 3:
-   storyText();
    him(600,100);
      break;
    case 4:
-   storyText();
    him(700,100);
      break;
    case 5:
-   storyText();
    him(700,200);
      break;
    case 6:
-   storyText();
    him(700,300);
     break;
    case 7:
-   storyText();
    him(700,400);
     break;
    case 8:
-   storyText();
    him(700,450);
      break;
 
@@ -153,39 +143,30 @@ function herStoryFunction() {
   herStory = herStory % 9;
   switch (herStory) {
    case 0:
-   storyText();
    her(1200,100);
      break;
    case 1:
-   storyText();
    her(1100,100);
      break;
    case 2:
-   storyText();
    her(1000,100);
      break;
    case 3:
-   storyText();
    her(900,100);
      break;
    case 4:
-   storyText();
    her(800,100);
      break;
    case 5:
-   storyText();
    her(800,200);
      break;
    case 6:
-   storyText();
    her(800,300);
     break;
    case 7:
-   storyText();
    her(800,400);
     break;
    case 8:
-   storyText();
    her(800,450);
      break;
 
