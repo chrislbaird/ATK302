@@ -1,6 +1,6 @@
 var hisStory = 0;
 var herStory = 0;
-let millisecond = millis();
+let millisecond;
 
 function setup() {
   createCanvas(1250, 1250);
@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-
+millisecond =  millis();
 text(millisecond / 100, 100, 100);
  console.log(herStory);
 
