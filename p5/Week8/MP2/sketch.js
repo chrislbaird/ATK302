@@ -3,6 +3,7 @@ var herStory = 0;
 var combineStoryTracker = 0;
 let millisecond;
 
+
 function setup() {
   createCanvas(1250, 1250);
   millisecond =  millis();
@@ -15,11 +16,14 @@ function setup() {
   rect(750,0, 500, 500);
   fill(124);
   rect(250, 500, 1000, 250);
+  button = createButton('click me');
+  button.position(19, 19);
+  button.mousePressed(startStory);
 
 }
 
 function draw() {
-console.log(millis % 1000 == 0);
+
 if (millis % 10000 == 0) {
   switch (combineStoryTracker) {
    case 0:
@@ -199,4 +203,9 @@ function herStoryFunction() {
 
 
 
+}
+
+
+function startStory() {
+ console.log("Hello");
 }
