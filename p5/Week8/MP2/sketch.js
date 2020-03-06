@@ -98,7 +98,7 @@ function draw() {
        break;
 
  }
- combineStoryTracker++;
+
 
 
 
