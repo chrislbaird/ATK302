@@ -56,11 +56,11 @@ function draw() {
       him(700, 300);
       break;
     case 14:
-      storyText("His", true);
+      storyText("In a blink of an eye the kitten made a dart towars the other end of the park ", true);
       him(700, 400);
       break;
     case 16:
-      storyText("His", true);
+      storyText("I picked up the kitten and before I knew it, she was standing right next to me. ", true);
       him(700, 450);
       break;
     case 1:
