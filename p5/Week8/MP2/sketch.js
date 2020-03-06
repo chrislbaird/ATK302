@@ -1,12 +1,12 @@
 var hisStory = 0;
 var herStory = 0;
 var combineStoryTracker = 0;
-let millisecond;
+
 var myVar = setInterval(moveStory, 1000);
 
 function setup() {
   createCanvas(1250, 1250);
-  millisecond =  millis();
+
   background(255);
   strokeWeight(4);
   stroke(0);
