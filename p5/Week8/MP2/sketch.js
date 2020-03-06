@@ -59,7 +59,7 @@ if (millis % 10000 == 0) {
    him(700,450);
     break;
    case 1:
-     storyText();
+    storyText();
      her(1200,100);
        break;
      case 3:
@@ -96,6 +96,7 @@ if (millis % 10000 == 0) {
        break;
 
  }
+ combineStoryTracker++;
 }
 
 
