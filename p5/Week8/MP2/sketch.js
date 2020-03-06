@@ -48,7 +48,7 @@ function draw() {
       him(700, 100);
       break;
     case 10:
-      storyText("His", true);
+      storyText("It was a normal day in the park when I saw her sitting on a bench. She was playing with something in her lap", true);
       him(700, 200);
       break;
     case 12:
