@@ -65,19 +65,19 @@ function draw() {
     break;
    case 1:
     storyText("Her", false);
-     her(1150,100);
+     her(1200,100);
        break;
      case 3:
      storyText("Her", false);
-     her(1050,100);
+     her(1100,100);
        break;
      case 5:
      storyText("Her", false);
-     her(950,100);
+     her(1000,100);
        break;
      case 7:
      storyText("Her", false);
-     her(800,100);
+     her(900,100);
        break;
      case 9:
      storyText("Her", false);
