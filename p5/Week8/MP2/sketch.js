@@ -2,7 +2,7 @@ var hisStory = 0;
 var herStory = 0;
 var combineStoryTracker = 0;
 
-var myVar = setInterval(moveStory, 10000);
+var myVar;
 
 function setup() {
   createCanvas(1250, 1250);
@@ -157,7 +157,7 @@ function her(x, y) {
 
 
 function mousePressed() {
-
+ myVar = setInterval(moveStory, 5000);
 
 }
 
