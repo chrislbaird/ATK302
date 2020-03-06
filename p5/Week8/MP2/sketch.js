@@ -160,17 +160,6 @@ function her(x, y) {
 
 function mousePressed() {
 
- if ((mouseX > 250 & mouseX < 750) & (mouseY > 0 & mouseY <500)) {
-   hisStoryFunction();
-} else if ((mouseX > 750 & mouseX < 1250) & (mouseY > 0 & mouseY <500)) {
-   herStoryFunction();
- } else {
-  console.log("log");
- }
-
-
-
-
 
 }
 
@@ -182,7 +171,7 @@ function mousePressed() {
 function hisStoryFunction() {
 
 
- hisStory++;
+
 
 
 
@@ -193,13 +182,6 @@ function hisStoryFunction() {
 
 function herStoryFunction() {
 
-  herStory = herStory % 9;
-  switch (herStory) {
-
-
-
- }
- herStory++;
 
 
 
