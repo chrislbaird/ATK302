@@ -114,7 +114,7 @@ function storyText(inputText, storyFlag) {
 
 
     push();
-    if (flag) {
+    if (storyflag) {
 
     fill(255,192,203);
     } else {
