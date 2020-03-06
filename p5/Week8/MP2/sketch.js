@@ -28,19 +28,19 @@ function draw() {
 
   switch (combineStoryTracker) {
     case 0:
-      storyText("His", true);
+      storyText("I was 25 years old just starting my first job after college.", true);
       him(300, 100);
       break;
     case 2:
-      storyText("His", true);
+      storyText("I had just moved to a new city and did not know anyone.", true);
       him(400, 100);
       break;
     case 4:
-      storyText("His", true);
+      storyText("I spent a lot of free tim waling around the city just so I could see someone", true);
       him(500, 100);
       break;
     case 6:
-      storyText("His", true);
+      storyText("I did not have the courage to interact with anyone", true);
       him(600, 100);
       break;
     case 8:
