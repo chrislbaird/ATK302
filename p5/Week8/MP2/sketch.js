@@ -99,6 +99,14 @@ function draw() {
      her(800,450);
        break;
 
+    case 18:
+    fill(124);
+    rect(250, 500, 1000, 250);
+
+    text("End", 300, 550, 800, 500);
+    clearInterval(myVar);
+    break;
+
  }
 
 
