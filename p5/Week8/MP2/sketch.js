@@ -158,7 +158,7 @@ function her(x, y) {
 
 function mousePressed() {
  myVar = setInterval(moveStory, 5000);
- combineStoryTracker = 0;
+ 
 
 }
 
