@@ -64,15 +64,15 @@ function draw() {
       him(700, 450);
       break;
     case 1:
-      storyText("I was 33 and starting a new point in my life", false);
+      storyText("I was 33 and starting a new point in my life.", false);
       her(1200, 100);
       break;
     case 3:
-      storyText("I had just finalized my divorce.  I had no desire to see or to talk to anyone", false);
+      storyText("I had just finalized my divorce.  I had no desire to see or to talk to anyone.", false);
       her(1100, 100);
       break;
     case 5:
-      storyText("I spent most of my days off of work alone. I could not stop thinking about the friends, family and of the marriage that I lost", false);
+      storyText("I spent most of my days off of work alone. I could not stop thinking about the friends, family and of the marriage that I lost.", false);
       her(1000, 100);
       break;
     case 7:
@@ -84,7 +84,7 @@ function draw() {
       her(800, 100);
       break;
     case 11:
-      storyText("It was a tiny kitten trying to play with my shoestrings", false);
+      storyText("It was a tiny kitten trying to play with my shoestrings.", false);
       her(800, 200);
       break;
     case 13:
