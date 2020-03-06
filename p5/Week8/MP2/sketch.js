@@ -22,7 +22,7 @@ function setup() {
 
 function draw() {
 
-if (millis % 10000 == 0) {
+
   switch (combineStoryTracker) {
    case 0:
    storyText();
@@ -99,7 +99,7 @@ if (millis % 10000 == 0) {
 
  }
  combineStoryTracker++;
-}
+
 
 
   storyText(mouseX + "   " + mouseY);
