@@ -2,7 +2,7 @@ var hisStory = 0;
 var herStory = 0;
 var combineStoryTracker = 0;
 let millisecond;
-
+var myVar = setInterval(moveStory, 1000);
 
 function setup() {
   createCanvas(1250, 1250);
@@ -16,9 +16,7 @@ function setup() {
   rect(750,0, 500, 500);
   fill(124);
   rect(250, 500, 1000, 250);
-  button = createButton('click me');
-  button.position(19, 19);
-  button.mousePressed(startStory);
+
 
 }
 
@@ -188,6 +186,7 @@ function herStoryFunction() {
 }
 
 
-function startStory() {
- console.log("Hello");
+function moveStory() {
+   console.log(combineStoryTracker);
+   combineStoryTracker++;
 }
