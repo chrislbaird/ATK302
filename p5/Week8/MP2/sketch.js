@@ -97,7 +97,7 @@ function draw() {
       break;
      case 17:
      storyText("Her", false);
-     her(800,450);
+     her(800,500);
       break;
 
     case 18:
