@@ -16,7 +16,8 @@ function setup() {
   rect(750,0, 500, 500);
   fill(124);
   rect(250, 500, 1000, 250);
-  storyText("Please Click to Start Story");
+
+  text("Please Click to Start Story", 300, 550, 800, 500);
 
 }
 
@@ -108,13 +109,17 @@ function draw() {
 
 
 
-function storyText(inputText) {
+function storyText(inputText, storyFlag) {
 
 
 
     push();
+    if (flag) {
+    fill(0, 102, 153);
+    } else {
+    fill(255,192,203);
+    }
 
-    fill(125);
     textSize(16);
     rect(250, 500, 1000, 250);
 
@@ -158,7 +163,7 @@ function her(x, y) {
 
 function mousePressed() {
  myVar = setInterval(moveStory, 5000);
- 
+
 
 }
 
