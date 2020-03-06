@@ -106,6 +106,7 @@ function draw() {
 
     text("End", 300, 550, 800, 500);
     clearInterval(myVar);
+    storyStateFlag = true;
     break;
 
  }
