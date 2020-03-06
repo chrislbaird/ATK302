@@ -102,7 +102,7 @@ function draw() {
 
 
 
-  storyText(mouseX + "   " + mouseY);
+
 
 }
 
