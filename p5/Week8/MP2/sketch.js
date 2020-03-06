@@ -81,23 +81,23 @@ function draw() {
       break;
     case 9:
       storyText("Her", false);
-      her(700, 100);
+      her(750, 100);
       break;
     case 11:
       storyText("Her", false);
-      her(700, 200);
+      her(750, 200);
       break;
     case 13:
       storyText("Her", false);
-      her(700, 300);
+      her(7500, 300);
       break;
     case 15:
       storyText("Her", false);
-      her(700, 400);
+      her(750, 400);
       break;
     case 17:
       storyText("Her", false);
-      her(700, 450);
+      her(750, 450);
       break;
     case 18:
       fill(124);
