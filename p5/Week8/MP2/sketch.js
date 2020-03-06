@@ -104,7 +104,8 @@ function draw() {
       fill(124);
       rect(250, 500, 1000, 250);
 
-      text("End", 300, 550, 800, 500);
+      text("End: Click to Start Again", 300, 550, 800, 500);
+      combineStoryTracker = -1;
       clearInterval(myVar);
       storyStateFlag = true;
       break;
@@ -179,6 +180,10 @@ function her(x, y) {
 
 function mousePressed() {
   if (storyStateFlag) {
+    fill(124);
+      rect(250, 500, 1000, 250);
+
+      text("Stars crossing in the night", 300, 550, 800, 500);
     myVar = setInterval(moveStory, 5000);
     storyStateFlag = false;
   }
