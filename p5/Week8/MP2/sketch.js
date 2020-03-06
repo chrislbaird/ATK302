@@ -112,7 +112,14 @@ function draw() {
 
 function storyText(inputText, storyFlag) {
 
+  push();
+  fill(124);
+  textSize(16);
+  rect(250, 500, 1000, 250);
 
+
+
+  pop();
 
     push();
     if (storyFlag) {
@@ -121,15 +128,9 @@ function storyText(inputText, storyFlag) {
 
     fill(255,192,203);
     }
-    pop();
-    push();
-    fill(124);
-    textSize(16);
-    rect(250, 500, 1000, 250);
-
     text(inputText, 300, 550, 800, 500);
-
     pop();
+
 
 }
 
