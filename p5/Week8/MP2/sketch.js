@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-consol.log(millis % 10000 == 0);
+console.log(millis % 10000 == 0);
 if (millis % 10000 == 0) {
   switch (combineStoryTracker) {
    case 0:
