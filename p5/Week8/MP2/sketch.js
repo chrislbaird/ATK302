@@ -28,7 +28,7 @@ function draw() {
 
   switch (combineStoryTracker) {
     case 0:
-      storyText("I was 25 years old just starting my first job after college.", true);
+      storyText("I was 25 years old just starting my first job after college. I had just moved to a new city and did not know anyone.", true);
       him(300, 100);
       break;
     case 1:
@@ -36,7 +36,7 @@ function draw() {
       her(1200, 100);
       break;
     case 2:
-      storyText("I had just moved to a new city and did not know anyone.", true);
+      storyText("I spent a lot of free time walking around the city just so I could see someone. I did not have the courage to interact with anyone.", true);
       him(400, 100);
       break;
     case 3:
@@ -44,15 +44,15 @@ function draw() {
       her(1100, 100);
       break;
     case 4:
-      storyText("I spent a lot of free time walking around the city just so I could see someone.", true);
+      storyText("My favorite place to walk was a park near my house.", true);
       him(500, 100);
       break;
     case 5:
-      storyText("I spent most of my days off of work alone. I could not stop thinking about the friends, family and of the marriage that I lost.", false);
+      storyText("I spent most of my days off of work alone. I could not stop thinking about the friends, family and of the marriage that I lost. It was a normal day in the park when I saw her sitting on a bench. She was playing with something in her lap.", false);
       her(1000, 100);
       break;
     case 6:
-      storyText("I did not have the courage to interact with anyone.", true);
+      storyText("", true);
       him(600, 100);
       break;
     case 7:
@@ -60,7 +60,7 @@ function draw() {
       her(900, 100);
       break;
     case 8:
-      storyText("My favorite place to walk was a park near my house.", true);
+      storyText("", true);
       him(700, 100);
       break;
     case 9:
@@ -68,7 +68,7 @@ function draw() {
       her(800, 100);
       break;
     case 10:
-      storyText("It was a normal day in the park when I saw her sitting on a bench. She was playing with something in her lap.", true);
+      storyText("", true);
       him(700, 200);
       break;
     case 11:
