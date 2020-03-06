@@ -1,6 +1,7 @@
 var hisStory = 0;
 var herStory = 0;
 var combineStoryTracker = -1;
+var storyStateFlag = true;
 
 
 var myVar;
@@ -175,7 +176,10 @@ function her(x, y) {
 
 
 function mousePressed() {
- myVar = setInterval(moveStory, 5000);
+ if (storyStateFlag) {
+  myVar = setInterval(moveStory, 5000);
+  storyStateFlag = false;
+ }
 
 
 }
