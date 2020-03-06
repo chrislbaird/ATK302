@@ -19,7 +19,7 @@ function setup() {
   fill(124);
   rect(250, 500, 1000, 250);
 
-  text("Please Click to Start Story", 301, 550, 800, 500);
+  text("Please Click to Start Story.", 301, 550, 800, 500);
 
 }
 
