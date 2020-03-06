@@ -116,9 +116,10 @@ function storyText(inputText, storyFlag) {
 
     push();
     if (storyFlag) {
-    fill(255,192,203);
-    } else {
     fill(0, 102, 153);
+    } else {
+
+    fill(255,192,203);
     }
 
     textSize(16);
