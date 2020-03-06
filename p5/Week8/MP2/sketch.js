@@ -1,7 +1,7 @@
 var hisStory = 0;
 var herStory = 0;
 var combineStoryTracker = -1;
-var storyFlag;
+
 
 var myVar;
 
