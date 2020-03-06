@@ -8,7 +8,7 @@ var myVar;
 
 function setup() {
   createCanvas(1250, 1250);
-
+  textSize(32);
   background(255);
   strokeWeight(4);
   stroke(0);
@@ -131,6 +131,7 @@ function storyText(inputText, storyFlag) {
   pop();
 
     push();
+
     if (storyFlag) {
     fill(0, 102, 153);
     } else {
