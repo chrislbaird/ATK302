@@ -52,7 +52,7 @@ function draw() {
       him(700, 200);
       break;
     case 12:
-      storyText("His", true);
+      storyText("She looked like she was in her own world nothing seemed to matter.", true);
       him(700, 300);
       break;
     case 14:
