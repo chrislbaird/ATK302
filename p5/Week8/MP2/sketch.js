@@ -1,6 +1,7 @@
 var hisStory = 0;
 var herStory = 0;
 var combineStoryTracker = -1;
+var storyFlag;
 
 var myVar;
 
@@ -115,7 +116,6 @@ function storyText(inputText, storyFlag) {
 
     push();
     if (storyflag) {
-
     fill(255,192,203);
     } else {
     fill(0, 102, 153);
