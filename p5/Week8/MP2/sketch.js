@@ -36,15 +36,15 @@ function draw() {
       him(400, 100);
       break;
     case 4:
-      storyText("I spent a lot of free tim waling around the city just so I could see someone", true);
+      storyText("I spent a lot of free time waling around the city just so I could see someone.", true);
       him(500, 100);
       break;
     case 6:
-      storyText("I did not have the courage to interact with anyone", true);
+      storyText("I did not have the courage to interact with anyone.", true);
       him(600, 100);
       break;
     case 8:
-      storyText("His", true);
+      storyText("My favorite place to walk was a park near my house.", true);
       him(700, 100);
       break;
     case 10:
