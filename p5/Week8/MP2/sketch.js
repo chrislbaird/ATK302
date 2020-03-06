@@ -1,6 +1,6 @@
 var hisStory = 0;
 var herStory = 0;
-var combineStoryTracker = 0;
+var combineStoryTracker = -1;
 
 var myVar;
 
@@ -16,7 +16,7 @@ function setup() {
   rect(750,0, 500, 500);
   fill(124);
   rect(250, 500, 1000, 250);
-
+  storyText("Please Click to Start Story");
 
 }
 
