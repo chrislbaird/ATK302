@@ -8,7 +8,7 @@ var myVar;
 
 function setup() {
   createCanvas(1250, 1250);
-  textSize(15);
+  textSize(25);
   background(255);
   strokeWeight(4);
   stroke(0);
