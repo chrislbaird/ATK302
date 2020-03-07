@@ -8,7 +8,7 @@ var myVar;
 
 function setup() {
   createCanvas(1250, 1250);
-  textSize(32);
+  textSize(15);
   background(255);
   strokeWeight(4);
   stroke(0);
@@ -52,7 +52,7 @@ function draw() {
       her(1000, 100);
       break;
     case 6:
-      storyText("I realized that it was one of the women from the party.  She had been pinned under some fallen debris that was on fire.  I tried my best to remove the debris with her help but my broken arm made progress almost impossible.   The heat and the smoke were too much I started to feel faint.  I could only hear her screams of pain.   The next thing I knew I woke up in a hospital bed.  The doctors told me that the women I tried to save died from injuries from the fire.  I was lucky to be found by a fireman coming to put out the fire.  Putting the broken arm aside,  I had only suffered minors burns.  The memories of the even traumatized me.  I took time off of work to get my head straight.  I did not want to be around anyone.   I spent my time walking around the city just to stay away from my home.  I would often go through the park to see the birds.   It was part of my routine.  ", true);
+      storyText("I realized that it was one of the women from the party.  She had been pinned under some fallen debris that was on fire.  I tried my best to remove the debris with her help but my broken arm made progress almost impossible.   The heat and the smoke were too much I started to feel faint.  I could only hear her screams of pain.   The next thing I knew I woke up in a hospital bed.  The doctors told me that the women I tried to save died from injuries from the fire.  I was lucky to be found by a fireman coming to put out the fire.  Putting the broken arm aside,  I had only suffered minors burns.  The memories of the even traumatized me.  I took time off of work to get my head straight.  I did not want to be around anyone.   I spent my time walking around the city just to stay away from my home.  I would often go through the park to see the birds.   It was part of my routine.  It was part of my routine.   It was during my second week going to the park that I noticed her on a bench in the park reading a book. ", true);
       him(600, 100);
       break;
     case 7:
