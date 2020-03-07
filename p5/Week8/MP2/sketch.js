@@ -17,7 +17,7 @@ function setup() {
   fill(255);
   rect(750, 0, 500, 500);
   fill(124);
-  rect(250, 500, 1000, 250);
+  rect(250, 500, 1000, 500);
 
   text("Please Click to Start Story.", 301, 550, 800, 500);
 
