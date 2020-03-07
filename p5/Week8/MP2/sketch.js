@@ -17,7 +17,7 @@ function setup() {
   fill(255);
   rect(750, 0, 500, 500);
   fill(124);
-  rect(250, 500, 1000, 500);
+  rect(250, 500, 1000, 800);
 
   text("Please Click to Start Story.", 301, 550, 800, 500);
 
@@ -143,7 +143,7 @@ function storyText(inputText, storyFlag) {
   push();
   fill(124);
   textSize(16);
-  rect(250, 500, 1000, 500);
+  rect(250, 500, 1000, 800);
 
 
 
@@ -198,7 +198,7 @@ function her(x, y) {
 function mousePressed() {
   if (storyStateFlag) {
     fill(124);
-    rect(250, 500, 1000, 500);
+    rect(250, 500, 1000, 800);
 
     text("Stars crossing in the night", 300, 550, 800, 500);
     myVar = setInterval(moveStory, 8000);
