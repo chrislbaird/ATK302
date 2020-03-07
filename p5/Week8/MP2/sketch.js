@@ -60,11 +60,11 @@ function draw() {
       her(900, 100);
       break;
     case 8:
-      storyText("", true);
+      storyText("test", true);
       him(700, 100);
       break;
     case 9:
-      storyText("", false);
+      storyText("test", false);
       her(800, 100);
       break;
     case 10:
