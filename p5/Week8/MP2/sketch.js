@@ -157,7 +157,7 @@ function storyText(inputText, storyFlag) {
 
     fill(255, 192, 203);
   }
-  text(inputText, 300, 550, 800, 900);
+  text(inputText, 300, 550, 800, 1000);
   pop();
 
 
