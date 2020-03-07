@@ -201,7 +201,7 @@ function mousePressed() {
     rect(250, 500, 1000, 250);
 
     text("Stars crossing in the night", 300, 550, 800, 500);
-    myVar = setInterval(moveStory, 5000);
+    myVar = setInterval(moveStory, 8000);
     storyStateFlag = false;
   }
 
