@@ -101,7 +101,7 @@ function draw() {
       break;
     case 18:
       fill(124);
-      rect(250, 500, 1000, 250);
+      rect(250, 500, 1000, 800);
       text("End: Click to Start Again", 300, 550, 800, 500);
       combineStoryTracker = -1;
       clearInterval(myVar);
