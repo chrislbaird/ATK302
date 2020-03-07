@@ -198,7 +198,7 @@ function her(x, y) {
 function mousePressed() {
   if (storyStateFlag) {
     fill(124);
-    rect(250, 500, 1000, 250);
+    rect(250, 500, 1000, 500);
 
     text("Stars crossing in the night", 300, 550, 800, 500);
     myVar = setInterval(moveStory, 8000);
