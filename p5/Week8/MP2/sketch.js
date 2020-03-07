@@ -143,7 +143,7 @@ function storyText(inputText, storyFlag) {
   push();
   fill(124);
   textSize(16);
-  rect(250, 500, 1000, 250);
+  rect(250, 500, 1000, 500);
 
 
 
