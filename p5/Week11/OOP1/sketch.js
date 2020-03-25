@@ -35,11 +35,11 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.display = function()
   {
     
-  if (this.xLocation > this.xBounds ||   this.xLocation < 0) {
+  if (this.xLocation + 50 > this.xBounds ||   this.xLocation - 50 < 0) {
     this.xDirection = this.xDirection * -1;
   }
 
-  if (this.yLocation > this.yBounds ||   this.yLocation < 0) {
+  if (this.yLocation + 50 > this.yBounds ||   this.yLocation - 50< 0) {
     this.yDirection = this.yDirection * -1;
   }
 
