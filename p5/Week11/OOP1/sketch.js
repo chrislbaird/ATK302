@@ -16,10 +16,10 @@ function setup() {
 
 function draw() {
   background("black");
-  testSquare.display();
-  testSquareAlpha.display();
-  testSquareBeta.display();
-  testSquareGreek.display();
+  for (var index = 0; index < myArrayOfSquares.length; index++) {
+    myArrayOfSquares(index).display();
+    
+  }
 }
 
 
