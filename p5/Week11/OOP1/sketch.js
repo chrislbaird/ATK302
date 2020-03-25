@@ -50,7 +50,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * - random(-5, 5);
     }
 
-
+    this.xDirection = this.xDirection % 5;
+    this.yDirection = this.yDirection % 5;
 
 
 
