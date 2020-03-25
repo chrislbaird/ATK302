@@ -39,7 +39,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.xDirection = this.xDirection * -1;
   }
 
-  if (this.yLocation + 50 > this.yBounds ||   this.yLocation - 50< 0) {
+  if (this.yLocation + 50 > this.yBounds ||   this.yLocation - 50 < 0) {
     this.yDirection = this.yDirection * -1;
   }
 
