@@ -3,9 +3,10 @@ var testSquare;
 
 function setup() {
   createCanvas(1000, 1000);
-  testSquare = new squares(100, 100, "red", 1000, 950, 50, 50, 1, -1);
-  testSquareBeta = new squares(800, 800, "green", 950, 950, 50, 50, 1, 1);
-  testSquareAlpha = new squares(400, 400, "blue", 950, 950, 50, 50, -1, -1);
+  testSquare     =  new squares(100, 100, "red",   950, 950, 50, 50, 1, 1);
+  testSquareBeta  = new squares(800, 800, "green", 950, 950, 50, 50, -1,  1);
+  testSquareAlpha = new squares(400, 400, "blue",  950, 950, 50, 50, 1, -1);
+  testSquareGreek = new squares(100, 800, "yellow",  950, 950, 50, 50, -1, -1);
   background("Black");
 }
 
@@ -14,6 +15,7 @@ function draw() {
   testSquare.display();
   testSquareAlpha.display();
   testSquareBeta.display();
+  testSquareGreek.display();
 }
 
 
