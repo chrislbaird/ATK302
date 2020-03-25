@@ -60,7 +60,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-    if (dist(mouseX, mouseY, this.xLocation, this.yDirection) < 300) {
+    if (dist(mouseX, mouseY, this.xLocation, this.yDirection) < 50) {
       this.yDirection = this.yDirection * - 1;
       this.xDirection = this.xDirection * - 1;
       print(this.squareColour);
