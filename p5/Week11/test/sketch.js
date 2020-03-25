@@ -1,5 +1,5 @@
 var testSquare;
-var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7];
+var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8];
 
 
 function setup() {
@@ -12,6 +12,7 @@ function setup() {
   myArrayOfSquares[4] = new squares(400, 900, "purple", 950, 950, 50, 50, 2, -1);
   myArrayOfSquares[5] = new squares(600, 300, "pink", 950, 950, 50, 50, -1, -2);
   myArrayOfSquares[6] = new squares(200, 900, "brown", 950, 950, 50, 50, -2, 1);
+  myArrayOfSquares[7] = new squares(200, 900, "aqua", 950, 950, 50, 50, -2, 1);
   background("Black");
 }
 
@@ -48,33 +49,52 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
   this.display = function () {
 
-    if (this.xLocation > this.xBounds || this.xLocation < 0) {
-      this.xDirection = this.xDirection * - 1;
+    // currently moving North
+    if (this.xDirection == 0 && this.yDirection == -1) {
+
+    }
+    // currently moving North East
+    if (this.xDirection == 1 && this.yDirection == -1) {
+
+    }
+    // currently moving East
+    if (this.xDirection == 1 && this.yDirection == 0) {
+
+    }
+    // currently moving South East
+    if (this.xDirection == 1 && this.yDirection == -1) {
+
+    }
+    // currently moving South
+    if (this.xDirection == 0 && this.yDirection == 1) {
+
+    }
+    // currently moving South West
+    if (this.xDirection == -1 && this.yDirection == 1) {
+
+    }
+    // currently moving West
+    if (this.xDirection == -1 && this.yDirection == 0) {
 
     }
 
-    if (this.yLocation > this.yBounds || this.yLocation < 0) {
-      this.yDirection = this.yDirection * - 1;
+    // currently moving North West
+    if (this.xDirection == -1 && this.yDirection == -1) {
 
     }
-
-    print(Math.ceil(random(-1, 2)));
-
-    if (dist(mouseX, mouseY, this.xLocation, this.yLocation) < 70) {
-      this.yDirection = Math.ceil(random(-1, 2));
-      this.xDirection = Math.ceil(random(-1, 2));
-      print(this.squareColour);
-    }
-
-
 
     push();
     fill(squareColour);
     stroke(squareColour);
     this.xLocation = (this.xLocation + this.xDirection);
     this.yLocation = (this.yLocation + this.yDirection);
-    rect(this.xLocation + 1, this.yLocation, this.XSize, this.YSize)
+    rect(this.xLocation , this.yLocation, this.XSize, this.YSize)
     pop();
+
+
+
+
+
 
 
 
