@@ -31,8 +31,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     fill(backgroundColour);
     rect(this.xLocation, this.yLocation,this.XSize,this.YSize)
     pop();
+    push();
     fill(squareColour);
-    rect(this.xLocation, this.yLocation,this.XSize,this.YSize)
+    rect(this.xLocation + 1, this.yLocation,this.XSize,this.YSize)
     pop();
 
 
