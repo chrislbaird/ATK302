@@ -55,32 +55,32 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     }
     // currently moving North East
-    if (this.xDirection == 1 && this.yDirection == -1) {
+    else if (this.xDirection == 1 && this.yDirection == -1) {
 
     }
     // currently moving East
-    if (this.xDirection == 1 && this.yDirection == 0) {
+    else if (this.xDirection == 1 && this.yDirection == 0) {
 
     }
     // currently moving South East
-    if (this.xDirection == 1 && this.yDirection == -1) {
+    else if (this.xDirection == 1 && this.yDirection == -1) {
 
     }
     // currently moving South
-    if (this.xDirection == 0 && this.yDirection == 1) {
+    else if (this.xDirection == 0 && this.yDirection == 1) {
 
     }
     // currently moving South West
-    if (this.xDirection == -1 && this.yDirection == 1) {
+    else if (this.xDirection == -1 && this.yDirection == 1) {
 
     }
     // currently moving West
-    if (this.xDirection == -1 && this.yDirection == 0) {
+    else if (this.xDirection == -1 && this.yDirection == 0) {
 
     }
 
     // currently moving North West
-    if (this.xDirection == -1 && this.yDirection == -1) {
+    else if (this.xDirection == -1 && this.yDirection == -1) {
 
     }
 
@@ -89,7 +89,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     stroke(squareColour);
     this.xLocation = (this.xLocation + this.xDirection);
     this.yLocation = (this.yLocation + this.yDirection);
-    rect(this.xLocation , this.yLocation, this.XSize, this.YSize)
+    rect(this.xLocation, this.yLocation, this.XSize, this.YSize)
     pop();
 
 
