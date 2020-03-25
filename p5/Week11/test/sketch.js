@@ -12,7 +12,7 @@ function setup() {
   myArrayOfSquares[4] = new squares(200, 200, "green", 950, 950, 50, 50, 2, -1);
   myArrayOfSquares[5] = new squares(300, 200, "indigo", 950, 950, 50, 50, -1, -2);
   myArrayOfSquares[6] = new squares(100, 300, "purple", 950, 950, 50, 50, -2, 1);
-  myArrayOfSquares[7] = new squares(200, 300, "black", 950, 950, 50, 50, -2, 1);
+  myArrayOfSquares[7] = new squares(200, 300, "grey", 950, 950, 50, 50, -2, 1);
   myArrayOfSquares[8] = new squares(300, 300, "white", 950, 950, 50, 50, -2, 1);
   background("Black");
 }
