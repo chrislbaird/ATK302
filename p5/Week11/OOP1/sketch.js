@@ -18,8 +18,9 @@ function draw() {
   background("black");
   for (var index = 0; index < myArrayOfSquares.length; index++) {
     myArrayOfSquares[index].display();
-    
+
   }
+  myArrayOfSquares[0].debuggerSquare();
 }
 
 
@@ -38,25 +39,31 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.yDirection = yDirection;
 
   //methods
+
+  this.debuggerSquare = function name() {
+    console.log(this.squareColour + "        output:   " + dist(mouseX, mouseY, this.xLocation, this.yDirection));
+  }
+
+
   this.display = function () {
 
     if (this.xLocation > this.xBounds || this.xLocation < 0) {
       this.xDirection = this.xDirection * - 1;
-     
+
     }
 
     if (this.yLocation > this.yBounds || this.yLocation < 0) {
       this.yDirection = this.yDirection * - 1;
-     
+
     }
 
-  
+
 
     if (dist(mouseX, mouseY, this.xLocation, this.yDirection) < 70) {
       this.yDirection = this.yDirection * - 1;
       this.xDirection = this.xDirection * - 1;
       console.log(this.squareColour);
-    }    
+    }
 
 
 
