@@ -112,9 +112,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.display = function () {
-    this.boundaryCheckX();
-    this.boundaryCheckY();
-    this.collisionCheck();
+    //   this.boundaryCheckX();
+    //    this.boundaryCheckY();
+    //    this.collisionCheck();
 
     print("True false statement check:  " + get(mouseX, mouseY) == color("black"));
     colorArray = get(mouseX, mouseY);
