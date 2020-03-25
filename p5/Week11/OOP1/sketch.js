@@ -8,6 +8,7 @@ function setup() {
 }
 
 function draw() {
+  background("black");
   testSquare.display();
 }
 
@@ -27,11 +28,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   //methods
   this.display = function()
   {
-    push();
-    fill(this.backgroundColour);
-    stroke(this.backgroundColour);
-    rect(this.xLocation, this.yLocation,this.XSize,this.YSize)
-    pop();
+    
+    
     push();
     fill(squareColour);
     stroke(squareColour);
