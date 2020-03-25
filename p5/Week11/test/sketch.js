@@ -4,7 +4,7 @@ var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function setup() {
   createCanvas(1000, 1000);
-  frameRate(60);
+  frameRate(1);
   myArrayOfSquares[0] = new squares(100, 100, "red", 950, 950, 50, 50, -1, -1);
   myArrayOfSquares[1] = new squares(200, 100, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[2] = new squares(300, 100, "yellow", 950, 950, 50, 50, 1, -1);
@@ -87,7 +87,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     push();
     fill(squareColour);
     stroke(squareColour);
-    
+    this.xLocation = (this.xLocation + this.xDirection);
+    this.yLocation = (this.yLocation + this.yDirection);
     rect(this.xLocation , this.yLocation, this.XSize, this.YSize)
     pop();
 
