@@ -1,4 +1,5 @@
 var testSquare;
+var 
 
 function setup() {
   createCanvas(1000, 1000);
@@ -35,6 +36,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     fill(squareColour);
     stroke(squareColour);
     this.xLocation = (this.xLocation + 5) % this.xBounds;
+    this.yLocation = (this.yLocation + 5) % this.yBounds;
     rect(this.xLocation + 1, this.yLocation,this.XSize,this.YSize)
     pop();
 
