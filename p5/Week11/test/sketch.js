@@ -116,7 +116,12 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.boundaryCheckY();
     this.collisionCheck();
     print(get(mouseX, mouseY));
+   
 
+    if (get(mouseX, mouseY) == color("black")) {
+      print("MouseX:   " + mouseX + "   MouseY:  " + mouseY + "   is black")
+    }
+    
 
 
 
