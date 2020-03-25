@@ -51,8 +51,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     push();
     fill(squareColour);
     stroke(squareColour);
-    this.xLocation = (this.xLocation + this.xDirection) % this.xBounds;
-    this.yLocation = (this.yLocation + this.yDirection) % this.yBounds;
+    this.xLocation = (this.xLocation + this.xDirection);
+    this.yLocation = (this.yLocation + this.yDirection);
     rect(this.xLocation + 1, this.yLocation,this.XSize,this.YSize)
     pop();
 
