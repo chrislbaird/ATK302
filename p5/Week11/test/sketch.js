@@ -84,7 +84,12 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     }
 
- 
+    push();
+    fill(squareColour);
+    stroke(squareColour);
+    
+    rect(this.xLocation , this.yLocation, this.XSize, this.YSize)
+    pop();
 
 
 
