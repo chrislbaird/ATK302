@@ -33,8 +33,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     push();
     fill(squareColour);
     stroke(squareColour);
-    this.xLocation = (this.xLocation + random(5)) % this.xBounds;
-    this.yLocation = (this.yLocation + random(5)) % this.yBounds;
+    this.xLocation = (this.xLocation + 1) % this.xBounds;
+    this.yLocation = (this.yLocation + 1) % this.yBounds;
     rect(this.xLocation + 1, this.yLocation,this.XSize,this.YSize)
     pop();
 
