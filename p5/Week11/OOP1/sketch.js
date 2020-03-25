@@ -8,7 +8,6 @@ function setup() {
 
 function draw() {
   testSquare.display();
-  testSquare.xLocation = (testSquare.xLocation + 5) % testSquare.xBounds;
 }
 
 
@@ -33,6 +32,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     pop();
     push();
     fill(squareColour);
+    stroke(squareColour);
+    this.xLocation = (this.xLocation + 5) % this.xBounds;
     rect(this.xLocation + 1, this.yLocation,this.XSize,this.YSize)
     pop();
 
