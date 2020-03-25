@@ -58,7 +58,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     }
 
-    print(random(-2, -2));
+    print(random(-1, 2));
 
     if (dist(mouseX, mouseY, this.xLocation, this.yLocation) < 70) {
       this.yDirection = random(-1, 2);
