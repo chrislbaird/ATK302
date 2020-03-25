@@ -4,7 +4,7 @@ var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function setup() {
   createCanvas(1000, 1000);
-  frameRate(60);
+  frameRate(1);
   myArrayOfSquares[0] = new squares(100, 100, "red", 950, 950, 50, 50, -1, -1);
   myArrayOfSquares[1] = new squares(200, 100, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[2] = new squares(300, 100, "yellow", 950, 950, 50, 50, 1, -1);
@@ -62,12 +62,18 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     }
   }
 
-  this.display = function () {
-    this.boundaryCheckX();
-    this.boundaryCheckY();
-    // currently moving North West
-    if (this.xDirection == -1 && this.yDirection == -1) {
+  this.checkCorner = function name() {
 
+  
+  }
+
+
+
+
+  this.collisionCheck = function name() {
+     // currently moving North West
+     if (this.xDirection == -1 && this.yDirection == -1) {
+       this.checkCorner();
     }
     // currently moving North 
     else if (this.xDirection == 0 && this.yDirection == -1) {
@@ -75,7 +81,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     }
     // currently moving North East
     else if (this.xDirection == 1 && this.yDirection == -1) {
-
+      this.checkCorner();
     }
     // currently moving West
     else if (this.xDirection == -1 && this.yDirection == -0) {
@@ -91,7 +97,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     }
     // currently moving south West
     else if (this.xDirection == -1 && this.yDirection == 1) {
-
+      this.checkCorner();
     }
 
     // currently moving South
@@ -101,9 +107,15 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     // currently moving South East
     else if (this.xDirection == 1 && this.yDirection == 1) {
-
+      this.checkCorner();
     }
+  }
 
+  this.display = function () {
+    this.boundaryCheckX();
+    this.boundaryCheckY();
+    this.collisionCheck();
+    print(get(mouseX, mouseY));
 
 
 
