@@ -3,7 +3,7 @@ var testSquare;
 
 function setup() {
   createCanvas(1000, 1000);
-  testSquare = new squares(100, 100, "red", 1000, 1000, 100, 100, "Black");
+  testSquare = new squares(100, 100, "red", 1000, 1000, 10, 10, "Black");
   background("Black");
 }
 
