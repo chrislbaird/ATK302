@@ -42,7 +42,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   //methods
 
   this.debuggerSquare = function name() {
-    print(this.squareColour + "        output:   " + dist(mouseX, mouseY, this.xLocation, this.yDirection));
+    print(this.squareColour + "        output:   " + dist(mouseX, mouseY, this.xLocation, this.yLocation));
   }
 
 
@@ -60,7 +60,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-    if (dist(mouseX, mouseY, this.xLocation, this.yDirection) < 50) {
+    if (dist(mouseX, mouseY, this.xLocation, this.yLocation) < 50) {
       this.yDirection = this.yDirection * - 1;
       this.xDirection = this.xDirection * - 1;
       print(this.squareColour);
