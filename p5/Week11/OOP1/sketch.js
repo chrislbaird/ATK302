@@ -3,18 +3,22 @@ var testSquare;
 
 function setup() {
   createCanvas(1000, 1000);
-  testSquare = new squares(100, 100, "red", 1000, 1000, 50, 50, "Black");
+  testSquare = new squares(100, 100, "red", 1000, 1000, 50, 50, 1, -1);
+  testSquareBeta = new squares(800, 800, "green", 900, 900, 50, 50, 1, 1);
+  testSquareAlpha = new squares(400, 400, "blue", 500, 500, 50, 50, -1, -1);
   background("Black");
 }
 
 function draw() {
   background("black");
   testSquare.display();
+  testSquareAlpha.display();
+  testSquareBeta.display();
 }
 
 
 
-function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YSize, backgroundColour) {
+function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YSize, xDirection, yDirection) {
 
   //attributes
   this.xLocation = xLocation;
@@ -24,6 +28,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.xBounds = xBounds;
   this.XSize = XSize;
   this.YSize = YSize;
+  this.xDirection = xDirection;
+  this.yDirection = yDirection;
  
   //methods
   this.display = function()
@@ -33,8 +39,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     push();
     fill(squareColour);
     stroke(squareColour);
-    this.xLocation = (this.xLocation + 1) % this.xBounds;
-    this.yLocation = (this.yLocation + 1) % this.yBounds;
+    this.xLocation = (this.xLocation + this.xDirection) % this.xBounds;
+    this.yLocation = (this.yLocation + this.yDirection) % this.yBounds;
     rect(this.xLocation + 1, this.yLocation,this.XSize,this.YSize)
     pop();
 
