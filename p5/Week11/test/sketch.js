@@ -48,7 +48,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.boundaryCheckX = function name() {
-   
+
     if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection <= 0) {
       this.xDirection = this.xDirection * -1;
     }
@@ -67,7 +67,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.boundaryCheckY();
     // currently moving North West
     if (this.xDirection == -1 && this.yDirection == -1) {
-       
+
     }
     // currently moving North 
     else if (this.xDirection == 0 && this.yDirection == -1) {
@@ -106,9 +106,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-    
 
-    
+
+
 
 
 
