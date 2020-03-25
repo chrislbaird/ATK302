@@ -1,18 +1,19 @@
 var testSquare;
-var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8];
+var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
 function setup() {
   createCanvas(1000, 1000);
   frameRate(60);
   myArrayOfSquares[0] = new squares(100, 100, "red", 950, 950, 50, 50, 1, 1);
-  myArrayOfSquares[1] = new squares(800, 800, "green", 950, 950, 50, 50, -1, 1);
-  myArrayOfSquares[2] = new squares(400, 400, "blue", 950, 950, 50, 50, 1, -1);
-  myArrayOfSquares[3] = new squares(500, 200, "orange", 950, 950, 50, 50, -1, -2);
-  myArrayOfSquares[4] = new squares(400, 900, "purple", 950, 950, 50, 50, 2, -1);
-  myArrayOfSquares[5] = new squares(600, 300, "pink", 950, 950, 50, 50, -1, -2);
-  myArrayOfSquares[6] = new squares(200, 900, "brown", 950, 950, 50, 50, -2, 1);
-  myArrayOfSquares[7] = new squares(200, 900, "aqua", 950, 950, 50, 50, -2, 1);
+  myArrayOfSquares[1] = new squares(200, 100, "green", 950, 950, 50, 50, -1, 1);
+  myArrayOfSquares[2] = new squares(300, 100, "blue", 950, 950, 50, 50, 1, -1);
+  myArrayOfSquares[3] = new squares(100, 200, "orange", 950, 950, 50, 50, -1, -2);
+  myArrayOfSquares[4] = new squares(200, 200, "purple", 950, 950, 50, 50, 2, -1);
+  myArrayOfSquares[5] = new squares(300, 200, "pink", 950, 950, 50, 50, -1, -2);
+  myArrayOfSquares[6] = new squares(100, 300, "brown", 950, 950, 50, 50, -2, 1);
+  myArrayOfSquares[7] = new squares(200, 300, "aqua", 950, 950, 50, 50, -2, 1);
+  myArrayOfSquares[7] = new squares(300, 300, "aqua", 950, 950, 50, 50, -2, 1);
   background("Black");
 }
 
