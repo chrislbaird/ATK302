@@ -27,7 +27,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.display = function()
   {
     push();
-    fill(backgroundColour);
+    fill(this.backgroundColour);
+    stroke(this.backgroundColour);
     rect(this.xLocation, this.yLocation,this.XSize,this.YSize)
     pop();
     push();
