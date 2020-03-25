@@ -51,50 +51,47 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.display = function () {
 
     // currently moving North West
-    if (this.xDirection == 0 && this.yDirection == -1) {
+    if (this.xDirection == -1 && this.yDirection == -1) {
 
     }
     // currently moving North 
-    else if (this.xDirection == 1 && this.yDirection == -1) {
+    else if (this.xDirection == 0 && this.yDirection == -1) {
 
     }
     // currently moving North East
-    else if (this.xDirection == 1 && this.yDirection == 0) {
-
-    }
-    // currently moving West
     else if (this.xDirection == 1 && this.yDirection == -1) {
 
     }
+    // currently moving West
+    else if (this.xDirection == -1 && this.yDirection == -0) {
+
+    }
     // currently moving neutral
-    else if (this.xDirection == 0 && this.yDirection == 1) {
+    else if (this.xDirection == 0 && this.yDirection == 0) {
 
     }
     // currently moving East
-    else if (this.xDirection == -1 && this.yDirection == 1) {
+    else if (this.xDirection == 1 && this.yDirection == 0) {
 
     }
     // currently moving south West
-    else if (this.xDirection == -1 && this.yDirection == 0) {
+    else if (this.xDirection == -1 && this.yDirection == 1) {
 
     }
 
     // currently moving South
-    else if (this.xDirection == -1 && this.yDirection == 0) {
+    else if (this.xDirection == 0 && this.yDirection == 1) {
 
     }
 
     // currently moving South East
-    else if (this.xDirection == -1 && this.yDirection == 0) {
+    else if (this.xDirection == 1 && this.yDirection == 1) {
 
     }
 
 
 
-    // currently moving North West
-    else if (this.xDirection == -1 && this.yDirection == -1) {
-
-    }
+    
 
     if (this.xLocation > this.xBounds || this.xLocation < 0) {
       this.xDirection = this.xDirection * - 1;
