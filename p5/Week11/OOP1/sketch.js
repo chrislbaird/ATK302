@@ -8,6 +8,7 @@ function setup() {
 
 function draw() {
   testSquare.display();
+  testSquare.xLocation = (testSquare.xLocation + 5) % testSquare.xBounds;
 }
 
 
