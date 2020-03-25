@@ -64,16 +64,16 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
   this.checkCorner = function name() {
 
-  
+
   }
 
 
 
 
   this.collisionCheck = function name() {
-     // currently moving North West
-     if (this.xDirection == -1 && this.yDirection == -1) {
-       this.checkCorner();
+    // currently moving North West
+    if (this.xDirection == -1 && this.yDirection == -1) {
+      this.checkCorner();
     }
     // currently moving North 
     else if (this.xDirection == 0 && this.yDirection == -1) {
@@ -115,15 +115,15 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.boundaryCheckX();
     this.boundaryCheckY();
     this.collisionCheck();
-   
+
     print("True false statement check:  " + get(mouseX, mouseY) == color("black"));
     colorArray = get(mouseX, mouseY);
     if (get(mouseX, mouseY) == color("black")) {
       print("MouseX:   " + mouseX + "   MouseY:  " + mouseY + "   is black")
       print(get(mouseX, mouseY));
-      
+
     }
-    
+
 
 
 
