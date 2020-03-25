@@ -41,17 +41,16 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.display = function () {
 
     if (this.xLocation > this.xBounds || this.xLocation < 0) {
-      this.xDirection = this.xDirection * - random(-5, 5);
-      this.yDirection = this.yDirection * - random(-5,5);
+      this.xDirection = this.xDirection * - 1;
+      this.yDirection = this.yDirection * - 1;
     }
 
     if (this.yLocation > this.yBounds || this.yLocation < 0) {
-      this.yDirection = this.yDirection * - random(-5,5);
-      this.xDirection = this.xDirection * - random(-5, 5);
+      this.yDirection = this.yDirection * - 1;
+      this.xDirection = this.xDirection * - 1;
     }
 
-    this.xDirection = this.xDirection % 5;
-    this.yDirection = this.yDirection % 5;
+  
 
 
 
