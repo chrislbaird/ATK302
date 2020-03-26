@@ -164,14 +164,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.yDirection = this.yDirection * - 1;
     }
 
-    if (this.xLocation + this.xDirection + 50 > this.xBounds + 50 || this.xLocation + this.xDirection < 0) {
-      this.xDirection = this.xDirection * - 1;
 
-    }
-
-    if (this.yLocation + this.yDirection + 50 > this.yBounds || this.yLocation + this.yDirection < 0) {
-      this.yDirection = this.yDirection * - 1;
-    }
 
 
     push();
@@ -195,7 +188,6 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-  //   }
 
   // }
 
