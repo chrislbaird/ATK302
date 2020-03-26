@@ -18,11 +18,12 @@ function setup() {
 }
 
 function draw() {
-  background("black");
+  
   for (var index = 0; index < myArrayOfSquares.length; index++) {
     myArrayOfSquares[index].display();
 
   }
+ myArrayOfSquares[8].debuggerSquare();
 
 }
 
@@ -44,7 +45,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   //methods
 
   this.debuggerSquare = function name() {
-    print(this.squareColour + "        output:   " + dist(mouseX, mouseY, this.xLocation, this.yLocation));
+    print("Square Colour:  " + this.squareColour);
+
+    
   }
 
   this.boundaryCheckX = function name() {
@@ -153,6 +156,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.boundaryCheckY();
     this.collisionCheck();
     var tester = get(mouseX, mouseY) == color("black");
+    
     //    print("True false statement check:  " + tester);
     //    colorArray = get(mouseX, mouseY);
     //    print("Print Color Red: " + colorArray[0])
