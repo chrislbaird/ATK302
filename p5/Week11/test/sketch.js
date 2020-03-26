@@ -97,6 +97,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * -1;
       this.yDirection = this.yDirection * -1;
       print(this.squareColour + "Bounce!");
+      print("Print Color Red: " + colorArray[0])
+      print("Print Color Green: " + colorArray[1])
+      print("Print Color Blue: " + colorArray[2])
     }
 
   }
