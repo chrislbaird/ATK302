@@ -77,15 +77,12 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.boundaryCheck = function name() {
-    if (this.xLocation + this.xDirection > 950 && this.yLocation + this.yDirection > 950) {
-      this.xDirection = -1;
-      this.yDirection = -1;
-    }
-    else if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection <= 0) {
+
+    if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection <= 0) {
       this.xDirection = this.xDirection * -1;
     }
 
-    else if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection <= 0) {
+    if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection <= 0) {
       this.yDirection = this.yDirection * -1;
     }
 
