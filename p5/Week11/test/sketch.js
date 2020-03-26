@@ -63,7 +63,41 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.checkCorner = function name() {
+   
+     var tempX;
+     var tempY;
+    //northwest
+    if (this.xDirection == -1 && this.yDirection == -1) {
+      tempX = this.xLocation + this.xDirection;
+      tempY = this.yLocation + this.yDirection;
+    }
+    // northeast
+    else if (this.xDirection == 1 && this.yDirection == -1) {
+      tempX = this.xLocation + this.xDirection + 50;
+      tempY = this.yLocation + this.yDirection;
+    }
+    //Southwest
+    else if (this.xDirection == -1 && this.yDirection == 1) {
+      tempX = this.xLocation + this.xDirection;
+      tempY = this.yLocation + this.yDirection + 50;
+    }
+    //southeast
+    else if (this.xDirection == 1 && this.yDirection == 1) {
+      tempX = this.xLocation + this.xDirection + 50;
+      tempY = this.yLocation + this.yDirection + 50;
+    }
 
+
+   colorArray = get(tempX, tempY);
+
+
+   
+   
+    if (colorArray[0] == 0 && colorArray[1] == 0 && colorArray[2] == 0) {
+      this.xDirection = this.xDirection * -1;
+      this.yDirection = this.yDirection * -1;
+      print(this.squareColour + "Bounce!");
+    }
 
   }
 
@@ -112,20 +146,16 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.display = function () {
-    //   this.boundaryCheckX();
-    //    this.boundaryCheckY();
-    //    this.collisionCheck();
+    this.boundaryCheckX();
+    this.boundaryCheckY();
+    this.collisionCheck();
     var tester = get(mouseX, mouseY) == color("black");
-    print("True false statement check:  " + tester);
-    colorArray = get(mouseX, mouseY);
-    print("Print Color Red: " + colorArray[0])
-    print("Print Color Green: " + colorArray[1])
-    print("Print Color Blue: " + colorArray[2])
-    if (colorArray[0] == 0 && colorArray[1] == 0 && colorArray[2] == 0) {
-      print("MouseX:   " + mouseX + "   MouseY:  " + mouseY + "   is black")
-      print(get(mouseX, mouseY));
-
-    }
+//    print("True false statement check:  " + tester);
+//    colorArray = get(mouseX, mouseY);
+//    print("Print Color Red: " + colorArray[0])
+//    print("Print Color Green: " + colorArray[1])
+//    print("Print Color Blue: " + colorArray[2])
+    
 
 
 
