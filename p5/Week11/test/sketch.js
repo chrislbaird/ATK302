@@ -85,8 +85,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * -1;
     }
 
-    else if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection <= 0) {
-      this.xDirection = this.xDirection * -1;
+    else if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection <= 0) {
+      this.yDirection = this.yDirection * -1;
     }
 
   }
