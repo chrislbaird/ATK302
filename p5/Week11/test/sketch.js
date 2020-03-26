@@ -153,6 +153,18 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   //methods
 
   this.moveSquare = function name() {
+
+
+    if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection < 0) {
+      this.xDirection = this.xDirection * - 1;
+
+    }
+
+    if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection < 0) {
+      this.yDirection = this.yDirection * - 1;
+    }
+
+
     push();
     canvasArray[0].fill(squareColour);
     canvasArray[0].stroke(squareColour);
@@ -172,13 +184,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
   // this.boundaryCheck = function name() {
 
-  //   if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection < 0) {
-  //     this.xDirection = this.xDirection * - 1;
 
-  //   }
-
-  //   if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection < 0) {
-  //     this.yDirection = this.yDirection * - 1;
 
   //   }
 
