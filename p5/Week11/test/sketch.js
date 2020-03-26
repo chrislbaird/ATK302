@@ -118,6 +118,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     print("True false statement check:  " + get(mouseX, mouseY) == color("black"));
     colorArray = get(mouseX, mouseY);
+    print("Print Color: " + colorArray[1])
     if (get(mouseX, mouseY) == color("black")) {
       print("MouseX:   " + mouseX + "   MouseY:  " + mouseY + "   is black")
       print(get(mouseX, mouseY));
