@@ -70,6 +70,18 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
   //methods
 
+  this.moveSquare = function name() {
+    push();
+    canvasArray[0].fill(squareColour);
+    canvasArray[0].stroke(squareColour);
+    this.xLocation = (this.xLocation + this.xDirection);
+    this.yLocation = (this.yLocation + this.yDirection);
+    canvasArray[0].rect(this.xLocation, this.yLocation, this.XSize, this.YSize)
+    pop();
+
+
+  }
+
   this.debuggerSquare = function name() {
     print("Square Colour:  " + this.squareColour);
 
@@ -181,7 +193,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.display = function () {
     this.boundaryCheck();
 
-    //this.collisionCheck();
+    // this.collisionCheck();
 
     //   var tester = get(mouseX, mouseY) == color("black");
     //   print("True false statement check:  " + tester);
@@ -197,13 +209,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-    push();
-    canvasArray[0].fill(squareColour);
-    canvasArray[0].stroke(squareColour);
-    this.xLocation = (this.xLocation + this.xDirection);
-    this.yLocation = (this.yLocation + this.yDirection);
-    canvasArray[0].rect(this.xLocation, this.yLocation, this.XSize, this.YSize)
-    pop();
+
 
 
 
