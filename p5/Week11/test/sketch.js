@@ -12,7 +12,7 @@ function setup() {
   canvasArray[1] = createGraphics(1000, 1000);
   createCanvas(1000, 1000);
   background(255);
-  frameRate(1);
+  frameRate(144);
   myArrayOfSquares[0] = new squares(100, 100, "red", 950, 950, 50, 50, -1, -1);
   myArrayOfSquares[1] = new squares(200, 100, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[2] = new squares(300, 100, "yellow", 950, 950, 50, 50, 1, -1);
