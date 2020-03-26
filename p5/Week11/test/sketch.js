@@ -1,9 +1,12 @@
 var testSquare;
 var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
+var offScreenCanvas = createCanvas(1000, 1000);
+var myCanvas = createCanvas(1000, 1000);
+var booleanFlag = true;
+var millisecond;
 
 function setup() {
-  createCanvas(1000, 1000);
+  millisecond = millis();
   frameRate(120);
   myArrayOfSquares[0] = new squares(100, 100, "red", 950, 950, 50, 50, -1, -1);
   myArrayOfSquares[1] = new squares(200, 100, "orange", 950, 950, 50, 50, 0, -1);
@@ -14,16 +17,33 @@ function setup() {
   myArrayOfSquares[6] = new squares(100, 300, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[7] = new squares(200, 300, "grey", 950, 950, 50, 50, 0, 1);
   myArrayOfSquares[8] = new squares(300, 300, "white", 950, 950, 50, 50, 1, 1);
-  background("Black");
+  myCanvase.background("Black");
+  offScreenCanvas.background("red");
 }
 
 function draw() {
-  
-  for (var index = 0; index < myArrayOfSquares.length; index++) {
-    myArrayOfSquares[index].display();
+  if (millisecond % 10000 ==) {
+    booleanFlag == false;
+  }
+
+  if (millisecond % 1000000) {
+    booleanFlag == true;
+  }
+
+  if (booleanFlag == true) {
+    image(myCanvas, 0, 0);
+  }
+  else {
+    image(offScreenCanvas, 0, 0);
 
   }
- myArrayOfSquares[8].debuggerSquare();
+
+
+  // for (var index = 0; index < myArrayOfSquares.length; index++) {
+  // myArrayOfSquares[index].display();
+
+  //}
+  //myArrayOfSquares[8].debuggerSquare();
 
 }
 
@@ -47,7 +67,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.debuggerSquare = function name() {
     print("Square Colour:  " + this.squareColour);
 
-    
+
   }
 
   this.boundaryCheckX = function name() {
@@ -156,7 +176,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.boundaryCheckY();
     this.collisionCheck();
     var tester = get(mouseX, mouseY) == color("black");
-    
+
     //    print("True false statement check:  " + tester);
     //    colorArray = get(mouseX, mouseY);
     //    print("Print Color Red: " + colorArray[0])
