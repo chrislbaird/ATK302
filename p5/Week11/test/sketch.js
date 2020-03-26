@@ -196,8 +196,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
     push();
-    fill(squareColour);
-    stroke(squareColour);
+    canvasArray[0].fill(squareColour);
+    canvasArray[0].stroke(squareColour);
     this.xLocation = (this.xLocation + this.xDirection);
     this.yLocation = (this.yLocation + this.yDirection);
     canvasArray[0].rect(this.xLocation, this.yLocation, this.XSize, this.YSize)
