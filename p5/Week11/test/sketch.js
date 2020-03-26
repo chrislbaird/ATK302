@@ -38,7 +38,7 @@ function draw() {
   }
   image(canvasArray[0], 0, 0);
 
-  // canvasArray[1].background(0);
+  canvasArray[0].background(0);
 
 }
 
