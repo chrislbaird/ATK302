@@ -30,7 +30,7 @@ function draw() {
 
 
   if (booleanFlag == true) {
-    image(mcanvasArray[0], 0, 0);
+    image(canvasArray[0], 0, 0);
   }
   else {
     image(canvasArray[1], 0, 0);
