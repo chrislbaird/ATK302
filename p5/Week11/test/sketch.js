@@ -38,11 +38,11 @@ function draw() {
   }
 
 
-  // for (var index = 0; index < myArrayOfSquares.length; index++) {
-  // myArrayOfSquares[index].display();
+  for (var index = 0; index < myArrayOfSquares.length; index++) {
+    myArrayOfSquares[index].display();
 
-  //}
-  //myArrayOfSquares[8].debuggerSquare();
+  }
+
 
 }
 
