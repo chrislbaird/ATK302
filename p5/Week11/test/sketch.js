@@ -196,7 +196,10 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-
+    if (this.xLocation > 950 && this.yLocation > 950) {
+      this.xDirection = -1;
+      this.yDirection = -1;
+    }
 
 
     push();
