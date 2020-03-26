@@ -205,6 +205,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   function mousePressed() {
+    print("Clicked");
     if (booleanFlag == true) {
       booleanFlag = false;
     } else {
