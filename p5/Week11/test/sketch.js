@@ -196,24 +196,30 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
   this.checkCorner = function name() {
 
-
+    var directionOfMovement;
 
     //northwest
     if (this.xDirection == -1 && this.yDirection == -1) {
       this.tempX = this.xLocation;
       this.tempY = this.yLocation;
+      directionOfMovement = "northwest";
+
 
     }
     // northeast
     else if (this.xDirection == 1 && this.yDirection == -1) {
       this.tempX = this.xLocation + this.xDirection + 50;
       this.tempY = this.yLocation + this.yDirection;
+      directionOfMovement = "northeast";
+
 
     }
     //Southwest
     else if (this.xDirection == -1 && this.yDirection == 1) {
       this.tempX = this.xLocation + this.xDirection;
       this.tempY = this.yLocation + this.yDirection + 50;
+      directionOfMovement = "Southwest";
+
 
 
     }
@@ -221,6 +227,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     else if (this.xDirection == 1 && this.yDirection == 1) {
       this.tempX = this.xLocation + 50;
       this.tempY = this.yLocation + 50;
+      directionOfMovement = "southeast";
+
 
 
 
@@ -241,6 +249,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * - 1;
       this.yDirection = this.yDirection * - 1;
       if (true) {
+        print("Expect direction of travel:" + directionOfMovement)
         print("The Result set for a " + squareColour + " set")
         print("Boolean evaluation for firstTest = " + firstTest)
         print("Print Color Red: " + this.colorArray[0])
