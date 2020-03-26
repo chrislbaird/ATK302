@@ -29,20 +29,16 @@ function setup() {
 function draw() {
 
 
-  if (booleanFlag == true) {
-    image(canvasArray[0], 0, 0);
-  }
-  else {
-    image(canvasArray[1], 0, 0);
 
-  }
 
 
   for (var index = 0; index < myArrayOfSquares.length; index++) {
     myArrayOfSquares[index].display();
 
   }
+  Image(canvasArray[1], 0, 0);
 
+  canvasArray[1].background(0);
 
 }
 
@@ -182,8 +178,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.boundaryCheckX();
     this.boundaryCheckY();
     this.collisionCheck();
-    var tester = get(mouseX, mouseY) == color("black");
 
+    //    var tester = get(mouseX, mouseY) == color("black");
     //    print("True false statement check:  " + tester);
     //    colorArray = get(mouseX, mouseY);
     //    print("Print Color Red: " + colorArray[0])
@@ -204,7 +200,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     stroke(squareColour);
     this.xLocation = (this.xLocation + this.xDirection);
     this.yLocation = (this.yLocation + this.yDirection);
-    rect(this.xLocation, this.yLocation, this.XSize, this.YSize)
+    canvasArray[0].rect(this.xLocation, this.yLocation, this.XSize, this.YSize)
     pop();
 
 
