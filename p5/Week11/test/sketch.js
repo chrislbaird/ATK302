@@ -160,6 +160,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   this.YSize = YSize;
   this.xDirection = xDirection;
   this.yDirection = yDirection;
+  this.tempX = 0;
+  this.tempY = 0;
+  this.colorArray = get(0, 0);
 
   //methods
 
@@ -193,32 +196,31 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
   this.checkCorner = function name() {
 
-    var tempX;
-    var tempY;
+
 
     //northwest
     if (this.xDirection == -1 && this.yDirection == -1) {
-      tempX = this.xLocation;
-      tempY = this.yLocation;
+      this.tempX = this.xLocation;
+      this.tempY = this.yLocation;
 
     }
     // northeast
     else if (this.xDirection == 1 && this.yDirection == -1) {
-      tempX = this.xLocation + this.xDirection + 50;
-      tempY = this.yLocation + this.yDirection;
+      this.tempX = this.xLocation + this.xDirection + 50;
+      this.tempY = this.yLocation + this.yDirection;
 
     }
     //Southwest
     else if (this.xDirection == -1 && this.yDirection == 1) {
-      tempX = this.xLocation + this.xDirection;
-      tempY = this.yLocation + this.yDirection + 50;
+      this.tempX = this.xLocation + this.xDirection;
+      this.tempY = this.yLocation + this.yDirection + 50;
 
 
     }
     //southeast
     else if (this.xDirection == 1 && this.yDirection == 1) {
-      tempX = this.xLocation + 50;
-      tempY = this.yLocation + 50;
+      this.tempX = this.xLocation + 50;
+      this.tempY = this.yLocation + 50;
 
 
 
@@ -228,10 +230,10 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-    colorArray = get(tempX, tempY);
+    this.colorArray = get(this.tempX, this.tempY);
 
 
-    var firstTest = colorArray[0] != 0 || colorArray[1] != 0 || colorArray[2] != 0;
+    var firstTest = this.colorArray[0] != 0 || this.colorArray[1] != 0 || this.colorArray[2] != 0;
 
 
 
@@ -239,23 +241,20 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * - 1;
       this.yDirection = this.yDirection * - 1;
 
-      if (this.squareColour == "white") {
-        print("Boolean evaluation for firstTest = " + firstTest)
-        print("Print Color Red: " + colorArray[0])
-        print("Print Color Green: " + colorArray[1])
-        print("Print Color Blue: " + colorArray[2])
-        print("This yDirection: " + this.yDirection);
-        print("This xDirection: " + this.xDirection);
-        print("This xLocation: " + this.xLocation);
-        print("This yLocation: " + this.yLocation);
-        print("This tempX: " + tempX);
-        print("This tempY: " + tempY);
-      }
-
-
 
     }
-
+    if (this.squareColour == "white") {
+      print("Boolean evaluation for firstTest = " + firstTest)
+      print("Print Color Red: " + this.colorArray[0])
+      print("Print Color Green: " + this.colorArray[1])
+      print("Print Color Blue: " + this.colorArray[2])
+      print("This yDirection: " + this.yDirection);
+      print("This xDirection: " + this.xDirection);
+      print("This xLocation: " + this.xLocation);
+      print("This yLocation: " + this.yLocation);
+      print("This tempX: " + this.tempX);
+      print("This tempY: " + this.tempY);
+    }
   }
 
 
