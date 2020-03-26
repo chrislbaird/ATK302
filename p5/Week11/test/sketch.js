@@ -1,5 +1,5 @@
 var testSquare;
-var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var myArrayOfSquares = [1];
 var booleanFlag = true;
 var currentCanvas = 0;
 var hiddenCanvas = 1;
