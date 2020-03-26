@@ -243,7 +243,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
     }
-    if (this.squareColour == "white") {
+    if (true) {
       print("Boolean evaluation for firstTest = " + firstTest)
       print("Print Color Red: " + this.colorArray[0])
       print("Print Color Green: " + this.colorArray[1])
