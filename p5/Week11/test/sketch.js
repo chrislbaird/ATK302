@@ -28,6 +28,8 @@ function setup() {
 
 function draw() {
 
+  print("X: " + myArrayOfSquares[8].xLocation);
+  print("Y: " + myArrayOfSquares[8].yLocation);
 
 
 
@@ -122,10 +124,10 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     if (colorArray[0] != 0 && colorArray[1] != 0 && colorArray[2] != 0) {
       this.xDirection = this.xDirection * -1;
       this.yDirection = this.yDirection * -1;
-      print(this.squareColour + "Bounce!");
-      print("Print Color Red: " + colorArray[0])
-      print("Print Color Green: " + colorArray[1])
-      print("Print Color Blue: " + colorArray[2])
+      //    print(this.squareColour + "Bounce!");
+      //    print("Print Color Red: " + colorArray[0])
+      //    print("Print Color Green: " + colorArray[1])
+      //    print("Print Color Blue: " + colorArray[2])
     }
 
   }
