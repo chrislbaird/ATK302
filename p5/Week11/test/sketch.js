@@ -109,6 +109,9 @@ function setup() {
   myArrayOfSquares[80] = new squares(900, 900, "white", 950, 950, 50, 50, 1, 1);
 
   canvasArray[0].background("black");
+  canvasArray[0].stroke("red");
+  canvasArray[0].fill("black");
+  canvasArray[0].rect(0, 0, 1000, 1000);
 
 }
 
@@ -124,6 +127,10 @@ function draw() {
   image(canvasArray[0], 0, 0);
 
   canvasArray[0].background(0);
+  canvasArray[0].stroke("red");
+  canvasArray[0].fill("black");
+  canvasArray[0].rect(0, 0, 1000, 1000);
+
 
 }
 
