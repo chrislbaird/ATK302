@@ -244,6 +244,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
         print("Print Color Red: " + colorArray[0])
         print("Print Color Green: " + colorArray[1])
         print("Print Color Blue: " + colorArray[2])
+        print("This yDirection: " + this.yDirection);
+        print("This xDirection: " + this.xDirection);
       }
 
 
@@ -297,7 +299,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.display = function () {
-    // this.boundaryCheck();
+
 
     this.collisionCheck();
 
