@@ -235,9 +235,10 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     colorArray = get(tempX, tempY);
     colorArray2 = get(trueTempX, trueTempY);
+    colorArray3 = get(color(this.squareColour));
 
     var firstTest = colorArray[0] != 0 || colorArray[1] != 0 || colorArray[2] != 0;
-    var secoundTest = colorArray2[0] != 0 || colorArray2[1] != 0 || colorArray2[2] != 0;;
+    var secoundTest = colorArray2[0] != colorArray3[0] || colorArray2[1] != colorArray3[1] || colorArray2[2] != colorArray3[2];
 
 
     if (firstTest || secoundTest) {
