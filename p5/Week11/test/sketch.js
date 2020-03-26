@@ -17,7 +17,7 @@ function setup() {
   myArrayOfSquares[1] = new squares(200, 100, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[2] = new squares(300, 100, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[3] = new squares(100, 200, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[4] = new squares(200, 200, "green", 950, 950, 50, 50, 0, 0);
+  // myArrayOfSquares[4] = new squares(200, 200, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[5] = new squares(300, 200, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[6] = new squares(100, 300, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[7] = new squares(200, 300, "grey", 950, 950, 50, 50, 0, 1);
@@ -27,7 +27,7 @@ function setup() {
   myArrayOfSquares[10] = new squares(500, 100, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[11] = new squares(600, 100, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[12] = new squares(400, 200, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[13] = new squares(500, 200, "green", 950, 950, 50, 50, 0, 0);
+  // myArrayOfSquares[13] = new squares(500, 200, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[14] = new squares(600, 200, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[15] = new squares(400, 300, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[16] = new squares(500, 300, "grey", 950, 950, 50, 50, 0, 1);
@@ -37,7 +37,7 @@ function setup() {
   myArrayOfSquares[19] = new squares(800, 100, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[20] = new squares(900, 100, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[21] = new squares(700, 200, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[22] = new squares(800, 200, "green", 950, 950, 50, 50, 0, 0);
+  // myArrayOfSquares[22] = new squares(800, 200, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[23] = new squares(900, 200, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[24] = new squares(700, 300, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[25] = new squares(800, 300, "grey", 950, 950, 50, 50, 0, 1);
@@ -47,7 +47,7 @@ function setup() {
   myArrayOfSquares[28] = new squares(200, 400, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[29] = new squares(300, 400, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[30] = new squares(100, 500, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[31] = new squares(200, 500, "green", 950, 950, 50, 50, 0, 0);
+  //  myArrayOfSquares[31] = new squares(200, 500, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[32] = new squares(300, 500, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[33] = new squares(100, 600, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[34] = new squares(200, 600, "grey", 950, 950, 50, 50, 0, 1);
@@ -58,7 +58,7 @@ function setup() {
   myArrayOfSquares[37] = new squares(500, 400, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[38] = new squares(600, 400, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[39] = new squares(400, 500, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[40] = new squares(500, 500, "green", 950, 950, 50, 50, 0, 0);
+  // myArrayOfSquares[40] = new squares(500, 500, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[41] = new squares(600, 500, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[42] = new squares(400, 600, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[43] = new squares(500, 600, "grey", 950, 950, 50, 50, 0, 1);
@@ -69,7 +69,7 @@ function setup() {
   myArrayOfSquares[46] = new squares(800, 400, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[47] = new squares(900, 400, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[48] = new squares(700, 500, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[49] = new squares(800, 500, "green", 950, 950, 50, 50, 0, 0);
+  // myArrayOfSquares[49] = new squares(800, 500, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[50] = new squares(900, 500, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[51] = new squares(700, 600, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[52] = new squares(800, 600, "grey", 950, 950, 50, 50, 0, 1);
@@ -80,7 +80,7 @@ function setup() {
   myArrayOfSquares[55] = new squares(200, 700, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[56] = new squares(300, 700, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[57] = new squares(100, 800, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[58] = new squares(200, 800, "green", 950, 950, 50, 50, 0, 0);
+  // myArrayOfSquares[58] = new squares(200, 800, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[59] = new squares(300, 800, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[60] = new squares(100, 900, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[61] = new squares(200, 900, "grey", 950, 950, 50, 50, 0, 1);
@@ -90,7 +90,7 @@ function setup() {
   myArrayOfSquares[64] = new squares(500, 700, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[65] = new squares(600, 700, "yellow", 950, 950, 50, 50, 1, -1);
   myArrayOfSquares[66] = new squares(400, 800, "lime", 950, 950, 50, 50, -1, 0);
-  myArrayOfSquares[67] = new squares(500, 800, "green", 950, 950, 50, 50, 0, 0);
+  // myArrayOfSquares[67] = new squares(500, 800, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[68] = new squares(600, 800, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[69] = new squares(400, 900, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[70] = new squares(500, 900, "grey", 950, 950, 50, 50, 0, 1);
@@ -161,6 +161,15 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     }
 
     if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection < 0) {
+      this.yDirection = this.yDirection * - 1;
+    }
+
+    if (this.xLocation + this.xDirection + 50 > this.xBounds + 50 || this.xLocation + this.xDirection < 0) {
+      this.xDirection = this.xDirection * - 1;
+
+    }
+
+    if (this.yLocation + this.yDirection + 50 > this.yBounds + 50 || this.yLocation + this.yDirection < 0) {
       this.yDirection = this.yDirection * - 1;
     }
 
