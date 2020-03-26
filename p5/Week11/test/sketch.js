@@ -138,14 +138,7 @@ function draw() {
 
 }
 
-function mousePressed() {
-  print("Clicked");
-  if (booleanFlag == true) {
-    booleanFlag = false;
-  } else {
-    booleanFlag = true;
-  }
-}
+
 
 
 function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YSize, xDirection, yDirection) {
