@@ -22,13 +22,7 @@ function setup() {
 }
 
 function draw() {
-  if (millisecond % 10000 ==) {
-    booleanFlag == false;
-  }
 
-  if (millisecond % 1000000) {
-    booleanFlag == true;
-  }
 
   if (booleanFlag == true) {
     image(myCanvas, 0, 0);
@@ -209,4 +203,14 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
   }
+
+  function mousePressed() {
+    if (booleanFlag == true) {
+     booleanFlag = false;
+    } else {
+      booleanFlag = true;
+    }
+  }
+
+
 }
