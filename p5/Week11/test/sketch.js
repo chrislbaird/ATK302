@@ -8,7 +8,8 @@ var booleanFlag = true;
 function setup() {
   myCanvas = createGraphics(1000, 1000);
   offScreenCanvas = createGraphics(1000, 1000);
-
+  createCanvas(1000, 1000);
+  background(255);
   frameRate(120);
   myArrayOfSquares[0] = new squares(100, 100, "red", 950, 950, 50, 50, -1, -1);
   myArrayOfSquares[1] = new squares(200, 100, "orange", 950, 950, 50, 50, 0, -1);
