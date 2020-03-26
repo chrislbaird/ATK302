@@ -63,9 +63,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.checkCorner = function name() {
-   
-     var tempX;
-     var tempY;
+
+    var tempX;
+    var tempY;
     //northwest
     if (this.xDirection == -1 && this.yDirection == -1) {
       tempX = this.xLocation + this.xDirection;
@@ -88,11 +88,11 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     }
 
 
-   colorArray = get(tempX, tempY);
+    colorArray = get(tempX, tempY);
 
 
-   
-   
+
+
     if (colorArray[0] == 0 && colorArray[1] == 0 && colorArray[2] == 0) {
       this.xDirection = this.xDirection * -1;
       this.yDirection = this.yDirection * -1;
@@ -150,12 +150,12 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     this.boundaryCheckY();
     this.collisionCheck();
     var tester = get(mouseX, mouseY) == color("black");
-//    print("True false statement check:  " + tester);
-//    colorArray = get(mouseX, mouseY);
-//    print("Print Color Red: " + colorArray[0])
-//    print("Print Color Green: " + colorArray[1])
-//    print("Print Color Blue: " + colorArray[2])
-    
+    //    print("True false statement check:  " + tester);
+    //    colorArray = get(mouseX, mouseY);
+    //    print("Print Color Red: " + colorArray[0])
+    //    print("Print Color Green: " + colorArray[1])
+    //    print("Print Color Blue: " + colorArray[2])
+
 
 
 
