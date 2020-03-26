@@ -20,7 +20,7 @@ function setup() {
   myArrayOfSquares[6] = new squares(100, 300, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[7] = new squares(200, 300, "grey", 950, 950, 50, 50, 0, 1);
   myArrayOfSquares[8] = new squares(300, 300, "white", 950, 950, 50, 50, 1, 1);
-  myCanvas.background("Black");
+  myCanvas.background("green");
   offScreenCanvas.background("red");
 }
 
