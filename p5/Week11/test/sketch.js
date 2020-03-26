@@ -249,7 +249,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
         print("This xLocation: " + this.xLocation);
         print("This yLocation: " + this.yLocation);
         print("This tempX: " + tempX);
-        print("This tempY" + this.tempY);
+        print("This tempY" + tempY);
       }
 
 
