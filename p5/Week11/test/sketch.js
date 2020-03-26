@@ -4,7 +4,7 @@ var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function setup() {
   createCanvas(1000, 1000);
-  frameRate(30);
+  frameRate(120);
   myArrayOfSquares[0] = new squares(110, 190, "red", 950, 950, 50, 50, -1, -1);
   myArrayOfSquares[1] = new squares(220, 180, "orange", 950, 950, 50, 50, 0, -1);
   myArrayOfSquares[2] = new squares(330, 170, "yellow", 950, 950, 50, 50, 1, -1);
