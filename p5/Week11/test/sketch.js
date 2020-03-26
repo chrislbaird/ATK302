@@ -1,12 +1,14 @@
 var testSquare;
 var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-var offScreenCanvas = createGraphics(1000, 1000);
-var myCanvas =        createGraphics(1000, 1000);
+var offScreenCanvas;
+var myCanvas;
 var booleanFlag = true;
-var millisecond;
+
 
 function setup() {
-  millisecond = millis();
+  myCanvas = createGraphics(1000, 1000);
+  offScreenCanvas = createGraphics(1000, 1000);
+
   frameRate(120);
   myArrayOfSquares[0] = new squares(100, 100, "red", 950, 950, 50, 50, -1, -1);
   myArrayOfSquares[1] = new squares(200, 100, "orange", 950, 950, 50, 50, 0, -1);
