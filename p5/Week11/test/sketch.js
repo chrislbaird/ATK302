@@ -40,18 +40,18 @@ function setup() {
   myArrayOfSquares[22] = new squares(800, 200, "green", 950, 950, 50, 50, 0, 0);
   myArrayOfSquares[23] = new squares(900, 200, "indigo", 950, 950, 50, 50, 1, 0);
   myArrayOfSquares[24] = new squares(700, 300, "purple", 950, 950, 50, 50, -1, 1);
-  myArrayOfSquares[24] = new squares(800, 300, "grey", 950, 950, 50, 50, 0, 1);
-  myArrayOfSquares[25] = new squares(900, 300, "white", 950, 950, 50, 50, 1, 1);
+  myArrayOfSquares[25] = new squares(800, 300, "grey", 950, 950, 50, 50, 0, 1);
+  myArrayOfSquares[26] = new squares(900, 300, "white", 950, 950, 50, 50, 1, 1);
 
-  // myArrayOfSquares[26] = new squares(400, 700, "red", 950, 950, 50, 50, -1, -1);
-  // myArrayOfSquares[27] = new squares(400, 700, "orange", 950, 950, 50, 50, 0, -1);
-  // myArrayOfSquares[28] = new squares(400, 700, "yellow", 950, 950, 50, 50, 1, -1);
-  // myArrayOfSquares[29] = new squares(500, 800, "lime", 950, 950, 50, 50, -1, 0);
-  // myArrayOfSquares[30] = new squares(500, 800, "green", 950, 950, 50, 50, 0, 0);
-  // myArrayOfSquares[31] = new squares(500, 800, "indigo", 950, 950, 50, 50, 1, 0);
-  // myArrayOfSquares[32] = new squares(600, 900, "purple", 950, 950, 50, 50, -1, 1);
-  // myArrayOfSquares[33] = new squares(600, 900, "grey", 950, 950, 50, 50, 0, 1);
-  // myArrayOfSquares[34] = new squares(600, 900, "white", 950, 950, 50, 50, 1, 1);
+  myArrayOfSquares[27] = new squares(400, 700, "red", 950, 950, 50, 50, -1, -1);
+  myArrayOfSquares[28] = new squares(400, 700, "orange", 950, 950, 50, 50, 0, -1);
+  myArrayOfSquares[29] = new squares(400, 700, "yellow", 950, 950, 50, 50, 1, -1);
+  myArrayOfSquares[30] = new squares(500, 800, "lime", 950, 950, 50, 50, -1, 0);
+  myArrayOfSquares[31] = new squares(500, 800, "green", 950, 950, 50, 50, 0, 0);
+  myArrayOfSquares[32] = new squares(500, 800, "indigo", 950, 950, 50, 50, 1, 0);
+  myArrayOfSquares[33] = new squares(600, 900, "purple", 950, 950, 50, 50, -1, 1);
+  myArrayOfSquares[34] = new squares(600, 900, "grey", 950, 950, 50, 50, 0, 1);
+  myArrayOfSquares[35] = new squares(600, 900, "white", 950, 950, 50, 50, 1, 1);
 
   canvasArray[0].background("black");
   canvasArray[1].background("red");
