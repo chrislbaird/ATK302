@@ -234,6 +234,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       print("Print Color Red: " + colorArray[0])
       print("Print Color Green: " + colorArray[1])
       print("Print Color Blue: " + colorArray[2])
+      this.moveSquare();
 
     }
 
