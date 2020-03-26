@@ -198,8 +198,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     //northwest
     if (this.xDirection == -1 && this.yDirection == -1) {
-      tempX = this.xLocation + this.xDirection;
-      tempY = this.yLocation + this.yDirection;
+      tempX = this.xLocation;
+      tempY = this.yLocation;
 
     }
     // northeast
@@ -217,8 +217,8 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     }
     //southeast
     else if (this.xDirection == 1 && this.yDirection == 1) {
-      tempX = this.xLocation + this.xDirection + 51;
-      tempY = this.yLocation + this.yDirection + 51;
+      tempX = this.xLocation + 50;
+      tempY = this.yLocation + 50;
 
 
 
