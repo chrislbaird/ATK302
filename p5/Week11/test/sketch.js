@@ -30,7 +30,8 @@ function draw() {
 
   print("X: " + myArrayOfSquares[8].xLocation);
   print("Y: " + myArrayOfSquares[8].yLocation);
-
+  print("X  direction: " + myArrayOfSquares[8].xDirection);
+  print("Y: direction: " + myArrayOfSquares[8].yDirection;
 
 
 
@@ -81,10 +82,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * -1;
     }
 
-    if (this.xLocation + this.xDirection > 950 && this.yLocation + this.yDirection > 950) {
-      this.xDirection = -1;
-      this.yDirection = -1;
-    }
+
 
   }
 
@@ -93,10 +91,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.yDirection = this.yDirection * -1;
     }
 
-    if (this.xLocation + this.xDirection > 950 && this.yLocation + this.yDirection > 950) {
-      this.xDirection = -1;
-      this.yDirection = -1;
-    }
+
   }
 
   this.checkCorner = function name() {
