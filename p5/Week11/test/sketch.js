@@ -114,10 +114,6 @@ function setup() {
 
 function draw() {
 
-  print("X: " + myArrayOfSquares[8].xLocation);
-  print("Y: " + myArrayOfSquares[8].yLocation);
-  print("X  direction: " + myArrayOfSquares[8].xDirection);
-  print("Y: direction: " + myArrayOfSquares[8].yDirection);
 
 
 
@@ -180,7 +176,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * - 1;
 
     }
-    print("bondary check");
+
     if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection < 0) {
       this.yDirection = this.yDirection * - 1;
 
@@ -214,7 +210,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       tempX = this.xLocation + this.xDirection + 50;
       tempY = this.yLocation + this.yDirection + 50;
 
-      if (tempX == 1001 && tempY == 1001) {
+      if (this.xLocation > 950 && this.yLocation > 950) {
         this.xDirection = -1;
         this.yDirection = -1;
         this.moveSquare();
