@@ -36,7 +36,7 @@ function draw() {
     myArrayOfSquares[index].display();
 
   }
-  image(canvasArray[1], 0, 0);
+  image(canvasArray[0], 0, 0);
 
   // canvasArray[1].background(0);
 
