@@ -1,13 +1,13 @@
 var testSquare;
 var myArrayOfSquares = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-var offScreenCanvas;
-var myCanvas;
 var booleanFlag = true;
+var currentCanvas = 0;
+var canvasArray = [1, 2];
 
 
 function setup() {
-  myCanvas = createGraphics(1000, 1000);
-  offScreenCanvas = createGraphics(1000, 1000);
+  canvasArray[0] = createGraphics(1000, 1000);
+  canvasArray[1] = createGraphics(1000, 1000);
   createCanvas(1000, 1000);
   background(255);
   frameRate(120);
@@ -20,18 +20,18 @@ function setup() {
   myArrayOfSquares[6] = new squares(100, 300, "purple", 950, 950, 50, 50, -1, 1);
   myArrayOfSquares[7] = new squares(200, 300, "grey", 950, 950, 50, 50, 0, 1);
   myArrayOfSquares[8] = new squares(300, 300, "white", 950, 950, 50, 50, 1, 1);
-  myCanvas.background("green");
-  offScreenCanvas.background("red");
+  canvasArray[0].background("green");
+  canvasArray[1].background("red");
 }
 
 function draw() {
 
 
   if (booleanFlag == true) {
-    image(myCanvas, 0, 0);
+    image(mcanvasArray[0], 0, 0);
   }
   else {
-    image(offScreenCanvas, 0, 0);
+    image(canvasArray[1], 0, 0);
 
   }
 
