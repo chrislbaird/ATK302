@@ -81,9 +81,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * -1;
     }
 
-    if (this.xLocation > 950 && this.yLocation > 950) {
-      this.xDirection = this.xDirection * -1;
-      this.yDirection = this.yDirection * -1;
+    if (this.xLocation + this.xDirection > 950 && this.yLocation + this.yDirection > 950) {
+      this.xDirection = -1;
+      this.yDirection = -1;
     }
 
   }
@@ -93,9 +93,9 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.yDirection = this.yDirection * -1;
     }
 
-    if (this.xLocation > 950 && this.yLocation > 950) {
-      this.xDirection = this.xDirection * -1;
-      this.yDirection = this.yDirection * -1;
+    if (this.xLocation + this.xDirection > 950 && this.yLocation + this.yDirection > 950) {
+      this.xDirection = -1;
+      this.yDirection = -1;
     }
   }
 
