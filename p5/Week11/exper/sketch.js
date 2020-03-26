@@ -10,10 +10,7 @@ function draw() {
   pop();
 
 
-  push()
-  fill("green");
-  rect(600, 600, 100, 100);
-  pop();
+
 
   colorArray = get(600, 600);
   print("Print Color Red: " + colorArray[0]);
