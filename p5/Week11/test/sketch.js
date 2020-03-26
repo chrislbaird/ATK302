@@ -82,7 +82,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * - 1;
 
     }
-
+    print("bondary check");
     if (this.yLocation > this.yBounds || this.yLocation < 0) {
       this.yDirection = this.yDirection * - 1;
 
