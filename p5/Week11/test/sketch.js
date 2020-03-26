@@ -93,7 +93,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
 
-    if (colorArray[0] == 0 && colorArray[1] == 0 && colorArray[2] == 0) {
+    if (colorArray[0] != 0 && colorArray[1] != 0 && colorArray[2] != 0) {
       this.xDirection = this.xDirection * -1;
       this.yDirection = this.yDirection * -1;
       print(this.squareColour + "Bounce!");
