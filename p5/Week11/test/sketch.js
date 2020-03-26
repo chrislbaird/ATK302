@@ -213,6 +213,14 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     else if (this.xDirection == 1 && this.yDirection == 1) {
       tempX = this.xLocation + this.xDirection + 50;
       tempY = this.yLocation + this.yDirection + 50;
+
+      if (tempX == 1001 && tempY == 1001) {
+        this.xDirection = -1;
+        this.yDirection = -1;
+        this.moveSquare();
+        this.checkCorner();
+      }
+
     }
 
 
