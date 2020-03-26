@@ -195,37 +195,32 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     var tempX;
     var tempY;
-    var trueTempX;
-    var trueTempY;
+
     //northwest
     if (this.xDirection == -1 && this.yDirection == -1) {
       tempX = this.xLocation + this.xDirection;
       tempY = this.yLocation + this.yDirection;
-      trueTempX = this.xLocation + this.xDirection;
-      trueTempY = this.yLocation + this.yDirection;
+
     }
     // northeast
     else if (this.xDirection == 1 && this.yDirection == -1) {
       tempX = this.xLocation + this.xDirection + 50;
       tempY = this.yLocation + this.yDirection;
-      trueTempX = this.xLocation + this.xDirection + 50;
-      trueTempY = this.yLocation + this.yDirection;
+
     }
     //Southwest
     else if (this.xDirection == -1 && this.yDirection == 1) {
       tempX = this.xLocation + this.xDirection;
       tempY = this.yLocation + this.yDirection + 50;
 
-      trueTempX = this.xLocation + this.xDirection;
-      trueTempY = this.yLocation + this.yDirection + 50;
+
     }
     //southeast
     else if (this.xDirection == 1 && this.yDirection == 1) {
       tempX = this.xLocation + this.xDirection + 50;
       tempY = this.yLocation + this.yDirection + 50;
 
-      trueTempX = this.xLocation + this.xDirection + 50;
-      trueTempY = this.yLocation + this.yDirection + 50;
+
 
 
 
@@ -234,11 +229,10 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
 
     colorArray = get(tempX, tempY);
-    //  colorArray2 = get(trueTempX, trueTempY);
-    //  colorArray3 = get(color(this.squareColour));
+
 
     var firstTest = colorArray[0] != 0 || colorArray[1] != 0 || colorArray[2] != 0;
-    //var secoundTest = colorArray2[0] != colorArray3[0] || colorArray2[1] != colorArray3[1] || colorArray2[2] != colorArray3[2];
+
 
 
     if (firstTest) {
