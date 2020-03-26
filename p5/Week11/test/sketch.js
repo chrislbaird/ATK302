@@ -31,7 +31,7 @@ function draw() {
   print("X: " + myArrayOfSquares[8].xLocation);
   print("Y: " + myArrayOfSquares[8].yLocation);
   print("X  direction: " + myArrayOfSquares[8].xDirection);
-  print("Y: direction: " + myArrayOfSquares[8].yDirection;
+  print("Y: direction: " + myArrayOfSquares[8].yDirection);
 
 
 
