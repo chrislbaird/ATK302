@@ -249,6 +249,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       this.xDirection = this.xDirection * - 1;
       this.yDirection = this.yDirection * - 1;
       if (true) {
+        print("_______________");
         print("Expect direction of travel:" + directionOfMovement)
         print("The Result set for a " + squareColour + " set")
         print("Boolean evaluation for firstTest = " + firstTest)
@@ -261,6 +262,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
         print("This yLocation: " + this.yLocation);
         print("This tempX: " + this.tempX);
         print("This tempY: " + this.tempY);
+        print("_______________");
       }
 
     }
