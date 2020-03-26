@@ -170,19 +170,19 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
   }
 
-  this.boundaryCheck = function name() {
+  // this.boundaryCheck = function name() {
 
-    if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection < 0) {
-      this.xDirection = this.xDirection * - 1;
+  //   if (this.xLocation + this.xDirection > this.xBounds || this.xLocation + this.xDirection < 0) {
+  //     this.xDirection = this.xDirection * - 1;
 
-    }
+  //   }
 
-    if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection < 0) {
-      this.yDirection = this.yDirection * - 1;
+  //   if (this.yLocation + this.yDirection > this.yBounds || this.yLocation + this.yDirection < 0) {
+  //     this.yDirection = this.yDirection * - 1;
 
-    }
+  //   }
 
-  }
+  // }
 
 
 
@@ -227,7 +227,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
       print("Print Color Red: " + colorArray[0])
       print("Print Color Green: " + colorArray[1])
       print("Print Color Blue: " + colorArray[2])
-      this.moveSquare();
+
     }
 
   }
@@ -277,7 +277,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
   }
 
   this.display = function () {
-    this.boundaryCheck();
+    // this.boundaryCheck();
 
     this.collisionCheck();
 
