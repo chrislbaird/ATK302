@@ -240,22 +240,22 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     if (firstTest) {
       this.xDirection = this.xDirection * - 1;
       this.yDirection = this.yDirection * - 1;
-
+      if (true) {
+        print("The Result set for a " + squareColour + " set")
+        print("Boolean evaluation for firstTest = " + firstTest)
+        print("Print Color Red: " + this.colorArray[0])
+        print("Print Color Green: " + this.colorArray[1])
+        print("Print Color Blue: " + this.colorArray[2])
+        print("This yDirection: " + this.yDirection);
+        print("This xDirection: " + this.xDirection);
+        print("This xLocation: " + this.xLocation);
+        print("This yLocation: " + this.yLocation);
+        print("This tempX: " + this.tempX);
+        print("This tempY: " + this.tempY);
+      }
 
     }
-    if (true) {
-      print("The Result set for a " + squareColour + " set")
-      print("Boolean evaluation for firstTest = " + firstTest)
-      print("Print Color Red: " + this.colorArray[0])
-      print("Print Color Green: " + this.colorArray[1])
-      print("Print Color Blue: " + this.colorArray[2])
-      print("This yDirection: " + this.yDirection);
-      print("This xDirection: " + this.xDirection);
-      print("This xLocation: " + this.xLocation);
-      print("This yLocation: " + this.yLocation);
-      print("This tempX: " + this.tempX);
-      print("This tempY: " + this.tempY);
-    }
+
   }
 
 
