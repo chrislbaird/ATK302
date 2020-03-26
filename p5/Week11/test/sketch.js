@@ -238,10 +238,15 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
     if (firstTest) {
       this.xDirection = this.xDirection * - 1;
       this.yDirection = this.yDirection * - 1;
-      // print(this.squareColour + "Bounce!");
-      // print("Print Color Red: " + colorArray[0])
-      // print("Print Color Green: " + colorArray[1])
-      // print("Print Color Blue: " + colorArray[2])
+
+      if (this.squareColour == "white") {
+        print("Boolean evaluation for firstTest = " + firstTest)
+        print(this.squareColour + "Bounce!");
+        print("Print Color Red: " + colorArray[0])
+        print("Print Color Green: " + colorArray[1])
+        print("Print Color Blue: " + colorArray[2])
+      }
+
 
 
     }
@@ -297,12 +302,7 @@ function squares(xLocation, yLocation, squareColour, yBounds, xBounds, XSize, YS
 
     this.collisionCheck();
 
-    //   var tester = get(mouseX, mouseY) == color("black");
-    //   print("True false statement check:  " + tester);
-    //   colorArray = get(mouseX, mouseY);
-    //  print("Print Color Red: " + colorArray[0])
-    //  print("Print Color Green: " + colorArray[1])
-    //  print("Print Color Blue: " + colorArray[2])
+
 
     this.moveSquare();
 
