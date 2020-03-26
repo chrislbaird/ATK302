@@ -16,7 +16,7 @@ function draw() {
   pop();
 
   colorArray = print(600, 600);
-  print("Print Color Red: " + colorArray[0])
-  print("Print Color Green: " + colorArray[1])
-  print("Print Color Blue: " + colorArray[2])
+  print("Print Color Red: " + colorArray[0]);
+  print("Print Color Green: " + colorArray[1]);
+  print("Print Color Blue: " + colorArray[2]);
 }
