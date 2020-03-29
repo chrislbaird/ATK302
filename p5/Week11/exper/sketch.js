@@ -4,16 +4,11 @@ function setup() {
 }
 
 function draw() {
-  push()
-  fill("red");
-  rect(500, 500, 100, 100);
-  pop();
-
-
-
-
-  colorArray = get(600, 600);
-  print("Print Color Red: " + colorArray[0]);
-  print("Print Color Green: " + colorArray[1]);
-  print("Print Color Blue: " + colorArray[2]);
+  for (let i = 30; i < width - 15; i++) {
+    for (let j = 20; j < height - 25; j++) {
+      let c = color(204 - j, 153 - i, 0);
+      set(i, j, c);
+    }
+  }
+  updatePixels();
 }
