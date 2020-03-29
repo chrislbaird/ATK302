@@ -4,10 +4,10 @@ function setup() {
 }
 
 function draw() {
-  for (let i = 30; i < width - 15; i++) {
-    for (let j = 20; j < height - 25; j++) {
+  for (let i = 30; i < width; i++) {
+    for (let j = 20; j < height; j++) {
       let c = color(204 - j, 153 - i, 0);
-      set(i, j, c);
+      set(i, j, c % 255);
     }
   }
   updatePixels();
