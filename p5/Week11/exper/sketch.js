@@ -8,7 +8,8 @@ function draw() {
     for (let j = 0; j < height; j++) {
       let c = color(204 - j, 153 - i, 0);
       set(i, j, rgb(255, 0, 0));
+      updatePixels();
     }
   }
-  updatePixels();
+
 }
