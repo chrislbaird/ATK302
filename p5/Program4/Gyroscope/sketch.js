@@ -2,7 +2,7 @@
 Make sure you turn on orientation lock on your iPhone or Android device. */
 
 var alpha, beta, gamma; // orientation data
-var bunnyImage;
+var circleImage;
 var xPosition = 0;
 var yPosition = 0;
 var x = 0; // acceleration data
@@ -18,7 +18,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  bunnyImage = loadImage("assets/ball.png");
+  circleImage = loadImage("assets/ball.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(circleImage, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
