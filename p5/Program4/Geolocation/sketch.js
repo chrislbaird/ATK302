@@ -19,15 +19,16 @@ function draw() {
   textSize(12);
 
   text("Your Location Latitude:  " + locationData.latitude, 40, 40);
-  text("Your Location Longitude:  " + locationData.longitude, 40, 60);
+  text("Your Location Latitude:  " + locationData.longitude, 40, 50);
 
 
   //Chicago distance
-  text("Your Distance from Chcicago:  " + locationData.latitude, 40, 60);
 
+  text("Your Distance from Chcicago:  " + getDistanceMiles(locationData.latitude, locationData.longitude, chicagoLat, ChicagoLong) + " miles", 40, 60);
 
   //new york distance 
-  text("Your distance from New York:  " + locationData.latitude, 40, 80);
+
+  text("Your Distance from New York:  " + getDistanceMiles(locationData.latitude, locationData.longitude, newYorklat, newYorkLong) + " miles", 40, 70);
 
 
 }
@@ -46,4 +47,8 @@ function getDistanceMiles(lat1, lon1, lat2, lon2) {
   var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   var d = R * c; // Distance in km
   return d / 1.609;
+}
+
+function deg2rad(deg) {
+  return deg * (Math.PI / 180)
 }
